@@ -142,3 +142,26 @@ section h2 { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; 
 footer { color: var(--muted); font-size: 13px; margin-top: 60px; }
 .placeholder { color: var(--muted); opacity: .6; font-style: italic; }
 .more { display: inline-flex; align-items: center; gap: 8px; color: var(--fg-strong); font-weight: 600; margin-top: 24px; font-size: 15px; }
+
+/* flow diagram: input → steps → output → who */
+.flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 16px 0 8px; }
+.flow .node { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px; padding: 12px 12px 12px; position: relative; min-width: 0; }
+.flow .node .k { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 4px; }
+.flow .node .t { color: var(--fg-strong); font-weight: 600; font-size: 14px; line-height: 1.3; }
+.flow .node .d { color: var(--muted); font-size: 12.5px; margin-top: 4px; line-height: 1.4; }
+.flow .node.io { background: transparent; border-style: dashed; }
+.flow .node.out { border-color: var(--accent); }
+.flow .node + .node::before { content: "→"; position: absolute; left: -13px; top: 14px; color: var(--muted); font-size: 14px; }
+@media (max-width: 600px) { .flow { grid-template-columns: 1fr; } .flow .node + .node::before { content: "↓"; left: 14px; top: -17px; } }
+.flow-note { color: var(--muted); font-size: 12.5px; margin: 6px 0 0; }
+
+/* screenshot with caption */
+.shot { margin: 18px 0; }
+.shot .ph, .shot img { width: 100%; border-radius: 8px; border: 1px solid var(--line); background: var(--bg-soft); }
+.shot .ph { aspect-ratio: 16/9; }
+.shot figcaption { color: var(--muted); font-size: 13px; margin-top: 8px; }
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 16px 0; }
+@media (max-width: 600px) { .facts { grid-template-columns: 1fr; } }
+.facts div { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.facts .k { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.facts .v { color: var(--fg-strong); font-weight: 600; margin-top: 4px; font-size: 14px; }
