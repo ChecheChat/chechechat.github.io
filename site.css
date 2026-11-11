@@ -31,7 +31,8 @@ img, video { max-width: 100%; display: block; }
 ::selection { background: var(--accent-soft); }
 
 /* two columns */
-.wrap { max-width: 1200px; margin: 0 auto; padding: 0 48px; display: grid; grid-template-columns: 5fr 7fr; gap: 64px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 48px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; }
+.main, .side { min-width: 0; }
 @media (max-width: 960px) { .wrap { grid-template-columns: 1fr; gap: 0; padding: 0 24px; } }
 
 .side { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: space-between; padding: 96px 0; }
