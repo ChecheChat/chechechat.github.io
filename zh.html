@@ -3,209 +3,290 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>车杭忆 — 把 AI 内容做成团队每天在用的工具</title>
+<title>车杭忆 · AI 内容解决方案</title>
 <meta name="description" content="设计师出身的应用 AI 构建者。会做 AI 内容，能把它做成团队每天在用的工具，还能讲给付钱的人听。">
-<link rel="stylesheet" href="style.css">
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Inter", sans-serif; }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
+<div class="wrap">
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="#home" data-tab="home">车杭忆</a>
-    <a class="item" href="#home" data-tab="home">总览</a>
-    <a class="item" href="#work" data-tab="work">作品</a>
-    <a class="item" href="#pipeline" data-tab="pipeline">管线</a>
-    <a class="item" href="#awards" data-tab="awards">奖项</a>
-    <a class="item" href="#community" data-tab="community">社区</a>
-    <a class="item" href="#about" data-tab="about">关于</a>
-    <a class="lang" href="index.html">EN</a>
-    <a class="btn ghost" href="assets/Hangyi_Che_Resume.pdf">简历 ↓</a>
-  </div>
-</nav>
-
-<!-- ========== 总览 ========== -->
-<section class="panel" data-panel="home">
-  <header class="section hero compact">
-    <div class="tags">
-      <span class="tag make">做出来</span>
-      <span class="tag build">做成工具</span>
-      <span class="tag explain">讲出来</span>
+  <!-- ===== 左栏（固定） ===== -->
+  <aside class="side">
+    <div>
+      <h1>车杭忆</h1>
+      <p class="role">AI 内容解决方案 · 应用 AI</p>
+      <p class="intro">设计师出身。我把 AI 内容做出来，做成团队每天在用的工具，再讲给付钱的人听。</p>
+      <ul class="menu">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#experience">经历</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#writing">文章与认证</a></li>
+      </ul>
     </div>
-    <h1>我把 AI 内容做出来，做成团队每天在用的工具，再讲给付钱的人听。</h1>
-    <p class="lead">设计师出身的应用 AI 构建者。两年电商 AIGC 创意，现在是一家东南亚跨境达人营销集团唯一的 AI 负责人。</p>
-    <div class="strip">
-      <span class="chip"><b>10 张图</b> 3 天 → 1～1.5 天</span>
-      <span class="chip"><b>2～3 人 3 天</b> → 1 人一个下午</span>
-      <span class="chip"><b>1,344 位达人</b> 一库去重</span>
-      <span class="chip"><b>v1.0 → v2.4</b> 两周，每天在用</span>
-      <span class="chip"><b>6,000+ 粉</b> · 单条 14 万播放</span>
+    <div class="social">
+      <a href="mailto:chehangyiii@gmail.com">邮箱</a>
+      <a href="https://www.linkedin.com/in/chehangyi" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ChecheChat" target="_blank" rel="noopener">GitHub</a>
+      <a href="assets/Hangyi_Che_Resume.pdf">简历 ↓</a>
+      <a href="index.html">EN</a>
     </div>
-  </header>
+  </aside>
 
-  <div class="section compact" style="padding-top:0">
-    <p class="eyebrow">全部作品一览</p>
-    <h2>三个动词，一条管线。点任何一个看详情。</h2>
-    <div class="map">
+  <!-- ===== 右栏（滚动） ===== -->
+  <main class="main">
 
-      <div class="col">
-        <h3><span class="tag make">做出来</span></h3>
-        <p class="sub">生图、生视频、3D，对质量、成本、效率有自己的判断</p>
-        <a class="tile" href="work/viral-remake.html"><div class="t">爆款逆向复刻</div><div class="d">拆一条 TikTok 电商爆款，用 Seedance / 即梦为另一个商品重做一遍</div><div class="n placeholder">成本 · 耗时 · 次数</div></a>
-        <a class="tile" href="work/ugc-video-workflow.html"><div class="t">跨境 UGC 短视频工作流</div><div class="d">元极 AI 公开模板：商品图 + 模特图进，UGC 短视频出</div><div class="n">6 个 agent · 公开模板</div></a>
-        <a class="tile" href="work/feibiqing-ab-creatives.html"><div class="t">AI 批量 A/B 促销图</div><div class="d">Midjourney / SD / ComfyUI 场景合成，天猫京东拼多多</div><div class="n">10 张：约 3 天 → 1～1.5 天</div></a>
-        <a class="tile" href="work/product3d-studio.html"><div class="t">product3d-studio</div><div class="d">一张商品图 → 3D 模型、三视图、转盘视频、换色款、AR</div><div class="n">群核科技黑客松</div></a>
-        <a class="tile" href="work/vpro-beauty-visuals.html"><div class="t">美妆品牌 AI 视觉（VPRO）</div><div class="d">Midjourney 替代模特摄影和 3D 渲染，品牌 0 到 1</div><div class="n">2024 – 2025</div></a>
-        <a class="tile soft" href="#community" data-tab="community"><div class="t">四款生图模型同题评测</div><div class="d">即梦 · 豆包 · Lovart · GPT Image，按商品还原度打分（抖音视频）</div></a>
+    <!-- 关于 -->
+    <section id="about" class="prose">
+      <h2>关于</h2>
+      <p>我学的是视觉传达，做了几年电商和品牌设计，2024 年开始把 Midjourney、Stable Diffusion、ComfyUI 放进日常生产，给美妆和家清品牌做图。两年下来，AI 生图是我用得最熟的一段。</p>
+      <p>2025 年起我自己跑 AI 内容账号、开源工作流、投黑客松，学会了用代码把流程做成工具。2026 年到东南亚，成了一家跨境达人营销集团<b>唯一的 AI 负责人</b>：听团队说卡在哪，出方案，上线，培训，按反馈迭代。现在泰国和越南的同事每天在用的几个工具，都是这样来的。</p>
+      <p>我最在意的不是模型多新，而是<b>做出来的东西有没有人用、省了多少、好不好讲清楚</b>。</p>
+      <p class="placeholder">[待定：这里要不要放一张照片？]</p>
+    </section>
+
+    <!-- 经历 -->
+    <section id="experience">
+      <h2>经历</h2>
+
+      <a class="row" href="#projects">
+        <div class="when">2026.10 — 至今</div>
+        <div>
+          <div class="title">AI 负责人（AI 助理产品经理）<span class="org"> · 东南亚跨境达人营销集团，曼谷 → 胡志明</span></div>
+          <p>靠两轮面向决策层的 AI 市场与方案汇报拿到岗位，入职第二周上线三个工具。现在是泰国、越南两边唯一做 AI 的人，手上 8 个项目，直接向老板汇报。</p>
+          <ul>
+            <li>短视频内容工作台：产品拆解 → 爆款拉片 → 脚本，建在团队 8 阶段 SOP 上</li>
+            <li>文旅热点·爆款助手：每天推中泰双语选题卡到 Lark，两周从 v1.0 迭代到 v2.4</li>
+            <li>达人库 1,344 人 + BD 助理机器人；展会情报日报；每个工具配双语说明和团队培训</li>
+          </ul>
+          <div class="chips"><span class="chip">Claude Code</span><span class="chip">Lark 机器人</span><span class="chip">云端任务</span><span class="chip">LLM</span></div>
+        </div>
+      </a>
+
+      <a class="row" href="work/feibiqing-ab-creatives.html">
+        <div class="when">2025.06 — 2026.08</div>
+        <div>
+          <div class="title">高级电商设计师，AI 创意生产<span class="org"> · 飞比晴（德国家清品牌）· 杭州</span></div>
+          <p>负责天猫、京东、拼多多全渠道视觉：详情页、促销图、直播间、大促素材。用 Midjourney、SD、ComfyUI 做场景合成和批量出图。</p>
+          <div class="num">10 张 A/B 促销图：约 3 天 → 1～1.5 天</div>
+          <div class="chips"><span class="chip">Midjourney</span><span class="chip">Stable Diffusion</span><span class="chip">ComfyUI</span><span class="chip">Photoshop</span></div>
+        </div>
+      </a>
+
+      <a class="row" href="work/vpro-beauty-visuals.html">
+        <div class="when">2024.02 — 2025.02</div>
+        <div>
+          <div class="title">品牌设计师，AI 视觉<span class="org"> · 聚子生物 · 千寻（直播 MCN）× 巨子生物孵化</span></div>
+          <p>用 Midjourney 给 VPRO 和姐妹品牌做美妆产品视觉和品牌内容，替代大部分模特摄影和 3D 渲染；负责直播电商页面和社媒视觉，和 MCN 的达人、主播配合。</p>
+          <div class="chips"><span class="chip">Midjourney</span><span class="chip">品牌 0 到 1</span><span class="chip">直播电商</span></div>
+        </div>
+      </a>
+
+      <a class="row" href="#about">
+        <div class="when">2023.04 — 2024.02</div>
+        <div>
+          <div class="title">数字营销设计（实习）<span class="org"> · 知专文化 · 阿里 × 哈佛商业评论中文版孵化</span></div>
+          <p>用 GPT 把访谈稿写成文章、Midjourney 配图，做出「知识胶囊」这个内容形式。</p>
+          <div class="chips"><span class="chip">GPT</span><span class="chip">Midjourney</span></div>
+        </div>
+      </a>
+
+      <a class="more" href="assets/Hangyi_Che_Resume.pdf">看完整简历 ↗</a>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects">
+      <h2>项目</h2>
+
+      <div class="group"><span class="folder"></span>AI 生图、生视频、3D</div>
+
+      <a class="row proj" href="work/viral-remake.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">爆款逆向复刻 <span class="arrow">↗</span></div>
+          <p>选一条 TikTok 电商爆款，逐镜拆解，用 Seedance / 即梦为另一个商品重做，剪映配音加字幕。全程记录每一步的工具、次数、成本、翻车点。</p>
+          <div class="num placeholder">[本周做：成本 · 耗时 · 次数]</div>
+          <div class="chips"><span class="chip make">做出来</span><span class="chip">Seedance</span><span class="chip">即梦</span><span class="chip">剪映</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/ugc-video-workflow.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">跨境 UGC 短视频工作流 <span class="arrow">↗</span></div>
+          <p>元极 AI 上的公开模板：商品图和模特图进，一条 UGC 短视频出。六个 agent 串起来：产品分析 → 创意策略 → 视觉风格 → 分镜 → 配音字幕 → 生视频。</p>
+          <div class="num">6 个 agent · 公开模板，别人在用</div>
+          <div class="chips"><span class="chip make">做出来</span><span class="chip build">做成工具</span><span class="chip">元极 AI</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/feibiqing-ab-creatives.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">AI 批量 A/B 促销图 <span class="arrow">↗</span></div>
+          <p>一个案例拆开看：需求 → 参考板 → 提示词结构 → 原图（含废图）→ 选图标准 → 修图 → 上线 A/B。Midjourney / SD / ComfyUI 场景合成。</p>
+          <div class="num">10 张图：约 3 天 → 1～1.5 天</div>
+          <div class="chips"><span class="chip make">做出来</span><span class="chip">Midjourney</span><span class="chip">ComfyUI</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/product3d-studio.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">product3d-studio <span class="arrow">↗</span></div>
+          <p>一张商品照片 → 3D 模型、三视图、转盘视频、换色款、AR 和分享页。群核科技黑客松参赛项目，用主办方的 3D 模型。</p>
+          <div class="num">1 张图 → 3D + 视频 · 代码公开</div>
+          <div class="chips"><span class="chip make">做出来</span><span class="chip build">做成工具</span><span class="chip">3D</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/vpro-beauty-visuals.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">美妆品牌 AI 视觉（VPRO） <span class="arrow">↗</span></div>
+          <p>品牌 0 到 1，Midjourney 产出产品视觉和品牌内容，替代大部分模特摄影和 3D 渲染。</p>
+          <div class="chips"><span class="chip make">做出来</span><span class="chip">Midjourney</span></div>
+        </div>
+      </a>
+
+      <div class="row" style="display:block">
+        <div class="title">生图作品墙</div>
+        <p>两年电商和美妆生图作品，可拖动浏览。<span class="placeholder">[待做：无限画布，先放网格]</span></p>
+        <div class="wall"><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div></div>
       </div>
 
-      <div class="col">
-        <h3><span class="tag build">做成工具</span></h3>
-        <p class="sub">需求 → 方案 → 上线 → 培训 → 迭代 → 在用</p>
-        <a class="tile" href="work/short-video-workbench.html"><div class="t">短视频内容工作台</div><div class="d">产品拆解 → 爆款拉片（开头 / 中段 / 结尾）→ 脚本</div><div class="n">2～3 人 3 天 → 1 人一个下午 · 团队试用中</div></a>
-        <a class="tile" href="work/trend-assistant.html"><div class="t">文旅热点·爆款助手</div><div class="d">每天扫约 120 条，选 8～11 个选题，9:30 推中泰双语卡片到 Lark</div><div class="n">v1.0 → v2.4 两周 · 每天在用</div></a>
-        <a class="tile" href="work/creator-crm-bee.html"><div class="t">达人库 + BD 助理 Bee</div><div class="d">35 张表 → 一个 Lark Base；机器人读泰文消息起草回复</div><div class="n">1,344 位达人 · Bee v1.0 测试中</div></a>
-        <a class="tile" href="work/expo-intel.html"><div class="t">展会情报助手</div><div class="d">每周一、四自动搜集东南亚展会，推 Lark 日报</div><div class="n">全公司订阅</div></a>
-        <a class="tile soft" href="#work" data-tab="work"><div class="t">其他工具</div><div class="d placeholder">直播群小 luo · AI 活动雷达 · Tldraw 小程序 · 其他小程序（待补）</div></a>
+      <div class="group"><span class="folder"></span>做成工具（团队在用）</div>
+
+      <a class="row proj" href="work/short-video-workbench.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">短视频内容工作台 <span class="arrow">↗</span></div>
+          <p>上传产品和品牌资料 → 自动拆解 TikTok 爆款（开头 / 中段 / 结尾）→ 生成脚本。建在团队 8 阶段短视频 SOP 上，用真实品牌跑过多轮。</p>
+          <div class="num">产品拆解到初版脚本：2～3 人 3 天 → 1 人一个下午 · 团队试用中</div>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span class="chip">LLM</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/trend-assistant.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">文旅热点·爆款助手 <span class="arrow">↗</span></div>
+          <p>每天扫约 120 条候选，选出 8～11 个选题，附为什么爆和混剪方案，9:30 推中泰双语卡片到 Lark。云端跑，电脑关机照常推。</p>
+          <div class="num">v1.0 → v2.4 两周，三轮团队反馈全部落地 · 每天在用</div>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span class="chip">Lark 机器人</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/creator-crm-bee.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">达人库 + BD 助理 Bee <span class="arrow">↗</span></div>
+          <p>35 张 Google 表合并去重成一个 Lark Base：合作状态、项目记录、评分、查重提醒、仪表盘。Bee 读达人的泰文消息，起草回复。</p>
+          <div class="num">1,344 位达人 · 库每天在用 · Bee v1.0 测试中</div>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">Lark Base</span><span class="chip">机器人</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/expo-intel.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">展会情报助手 <span class="arrow">↗</span></div>
+          <p>每周一、四自动搜集东南亚展会，推日报到 Lark。</p>
+          <div class="num">全公司订阅 · v1.0 → v1.4</div>
+          <div class="chips"><span class="chip build">做成工具</span></div>
+        </div>
+      </a>
+
+      <div class="row" style="display:block">
+        <div class="title">更早的工具</div>
+        <p class="placeholder">[待补] 直播群小 luo（每日总结、品牌周报）· AI 活动雷达 · Tldraw 微信小程序 · 其他小程序</p>
       </div>
 
-      <div class="col">
-        <h3><span class="tag explain">讲出来</span></h3>
-        <p class="sub">面向决策层讲方案、带团队培训、写文章</p>
-        <a class="tile" href="work/thailand-ai-market.html"><div class="t">泰国 AI 变现市场调研与方案汇报</div><div class="d">两轮汇报给公司决策层，成为泰国 AI 业务方向的依据</div><div class="n">拿到现在这个岗位的「试稿」</div></a>
-        <a class="tile" href="#community" data-tab="community"><div class="t">团队培训与双语使用说明</div><div class="d">每个上线工具配中泰双语说明和团队演示</div></a>
-        <a class="tile" href="#community" data-tab="community"><div class="t">长文与评测</div><div class="d">X 品牌出海长文 · 生图模型评测视频 · 阿里云百炼开源案例</div><div class="n">6,000+ 粉 · 单条 14 万 · 400 人社群</div></a>
-        <a class="tile" href="#awards" data-tab="awards"><div class="t">比赛与认证</div><div class="d">PAYATHON · 观猹黑客松 · 涌现奖 · 百炼认证开发者 · 商汤准布道师 · 刺猬星球讲师邀请</div></a>
+      <div class="group"><span class="folder"></span>比赛与独立产品</div>
+
+      <a class="row proj" href="https://offer-jiasu-pay.netlify.app" target="_blank" rel="noopener">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">Offer 加速器 <span class="arrow">↗</span></div>
+          <p>投了观猹环球黑客松和支付宝 AI 付 PAYATHON 2026，作品公开展示中。</p>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">已提交</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="https://tousu-youmen.netlify.app" target="_blank" rel="noopener">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">投诉有门 <span class="arrow">↗</span></div>
+          <p>帮你写投诉、找对投诉渠道。支付宝智能体涌现奖，审核中。</p>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">审核中</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="https://github.com/ChecheChat/ecommerce-wireframe-strategist" target="_blank" rel="noopener">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">电商线框策略 Agent Skill <span class="arrow">↗</span></div>
+          <p>从市场和竞品资料生成电商视觉线框策略，按上线反馈持续优化。阿里云百炼首批认证开发者。</p>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">开源</span></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- 文章与认证 -->
+    <section id="writing">
+      <h2>文章与认证</h2>
+
+      <a class="row" href="work/thailand-ai-market.html">
+        <div class="when">2026.09</div>
+        <div>
+          <div class="title">泰国 AI 变现：市场调研与方案汇报 <span class="arrow">↗</span></div>
+          <p>两轮面向公司决策层的汇报，成为泰国 AI 业务方向的依据，也是拿到现在岗位的「试稿」。</p>
+          <div class="chips"><span class="chip explain">讲出来</span></div>
+        </div>
+      </a>
+
+      <a class="row" href="#">
+        <div class="when">2026</div>
+        <div>
+          <div class="title">四款生图模型同题评测 <span class="arrow">↗</span></div>
+          <p>即梦、豆包、Lovart、GPT Image 跑同一个电商需求，按商品还原度打分。<span class="placeholder">[抖音视频链接待补]</span></p>
+          <div class="chips"><span class="chip explain">讲出来</span><span class="chip make">做出来</span></div>
+        </div>
+      </a>
+
+      <a class="row" href="#">
+        <div class="when">2026.10</div>
+        <div>
+          <div class="title">中国品牌在泰国：蜜雪冰城与喜茶 <span class="arrow">↗</span></div>
+          <p>品牌出海长文。<span class="placeholder">[X 文章链接待补]</span></p>
+          <div class="chips"><span class="chip explain">讲出来</span></div>
+        </div>
+      </a>
+
+      <div class="row" style="display:block">
+        <div class="title">认证与邀请</div>
+        <ul>
+          <li>阿里云百炼 · 首批认证开发者（电商线框策略 Skill 被认定为开源案例）</li>
+          <li>商汤小浣熊 · 布道师计划，准布道师</li>
+          <li>刺猬星球（杭州）· AI 工具讲师，受邀</li>
+          <li>观猹 · 签约 AI 创作者</li>
+        </ul>
+        <p>AI 内容账号：6,000+ 粉 · 单条 14 万播放 · 400 人社群</p>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- ========== 作品 ========== -->
-<section class="panel" data-panel="work">
-  <div class="section">
-    <p class="eyebrow">精选作品</p>
-    <h2>六个项目。先看效果，再看怎么落地的。</h2>
-    <div class="grid-2">
-      <a class="card" href="work/viral-remake.html"><div class="media"></div><span class="tag make">做出来</span><h3>爆款逆向复刻</h3><p class="muted">选一条 TikTok 电商爆款，逐镜拆解，用 Seedance / 即梦为另一个商品重做，剪映配音加字幕。</p><div class="num placeholder">成本 · 耗时 · 次数</div></a>
-      <a class="card" href="work/ugc-video-workflow.html"><div class="media"></div><span class="tag make">做出来</span> <span class="tag build">做成工具</span><h3>跨境 UGC 短视频工作流</h3><p class="muted">元极 AI 公开模板：商品图和模特图进，一条 UGC 短视频出。六个 agent：产品分析 → 创意策略 → 视觉风格 → 分镜 → 配音字幕 → 生视频。</p><div class="num">6 个 agent · 公开模板</div></a>
-      <a class="card" href="work/feibiqing-ab-creatives.html"><div class="media"></div><span class="tag make">做出来</span><h3>AI 批量 A/B 促销图</h3><p class="muted">Midjourney、Stable Diffusion、ComfyUI 场景合成，天猫 / 京东 / 拼多多大促，德国家清品牌。</p><div class="num">10 张图：约 3 天 → 1～1.5 天</div></a>
-      <a class="card" href="work/product3d-studio.html"><div class="media"></div><span class="tag make">做出来</span> <span class="tag build">做成工具</span><h3>product3d-studio</h3><p class="muted">一张商品照片 → 3D 模型、三视图、转盘视频、换色款、AR 和分享页。群核科技黑客松参赛项目，用主办方的 3D 模型。</p><div class="num">1 张图 → 3D + 视频</div></a>
-      <a class="card" href="work/short-video-workbench.html"><div class="media"></div><span class="tag build">做成工具</span> <span class="tag explain">讲出来</span><h3>短视频内容工作台</h3><p class="muted">产品资料进 → 自动拆解 TikTok 爆款（开头 / 中段 / 结尾）→ 生成脚本，建在团队的 8 阶段短视频 SOP 上。</p><div class="num">2～3 人 3 天 → 1 人一个下午</div></a>
-      <a class="card" href="work/trend-assistant.html"><div class="media"></div><span class="tag build">做成工具</span> <span class="tag explain">讲出来</span><h3>文旅热点·爆款助手</h3><p class="muted">每天扫约 120 条候选，选出 8～11 个选题，附为什么爆和混剪方案，每天早上推中泰双语卡片到 Lark。</p><div class="num">v1.0 → v2.4 两周 · 每天在用</div></a>
-    </div>
-
-    <p class="eyebrow" style="margin-top:80px">全部工具</p>
-    <h2>为一家东南亚跨境达人营销集团（泰国 / 越南）和自己做的。</h2>
-    <table>
-      <thead><tr><th>工具</th><th>给谁</th><th>做什么</th><th>状态</th></tr></thead>
-      <tbody>
-        <tr><td>短视频内容工作台</td><td>越南短视频团队</td><td>产品拆解 → 爆款拉片 → 脚本</td><td><span class="status">团队试用中</span></td></tr>
-        <tr><td>文旅热点·爆款助手</td><td>泰国内容团队</td><td>每日 Lark 卡片，中泰双语，v2.4</td><td><span class="status">每天在用</span></td></tr>
-        <tr><td>达人库</td><td>泰国 BD 团队</td><td>35 张表 → 一个 Lark Base，1,344 位达人，评分、查重提醒</td><td><span class="status">每天在用</span></td></tr>
-        <tr><td>BD 助理 Bee</td><td>泰国 BD 团队</td><td>读达人的泰文消息，起草回复</td><td><span class="status">v1.0 测试中</span></td></tr>
-        <tr><td>展会情报助手</td><td>全公司</td><td>每周两次东南亚展会日报推 Lark</td><td><span class="status">全公司订阅</span></td></tr>
-        <tr><td>直播群小 luo</td><td>直播团队</td><td>直播群每日总结、品牌周报</td><td><span class="status placeholder">状态？</span></td></tr>
-        <tr><td>AI 活动雷达</td><td>自己</td><td>AI 活动和黑客松的本地页面 + 自动更新脚本</td><td><span class="status">个人工具</span></td></tr>
-        <tr><td class="placeholder">Tldraw 小程序</td><td class="placeholder">？</td><td class="placeholder">最早的 web coding 作品，待补</td><td><span class="status">个人工具</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- ========== 管线 ========== -->
-<section class="panel" data-panel="pipeline">
-  <div class="section">
-    <p class="eyebrow">内容管线</p>
-    <h2>哪段做过，哪段只实验过。</h2>
-    <p class="lead">实心 = 做过并上线。半实心 = 只实验过。空心 = 还没做。</p>
-    <div class="pipeline">
-      <div class="stage solid"><div class="label">脚本（LLM）</div><div class="proof">工作台 · 热点助手 · BD 助理</div></div>
-      <div class="stage solid"><div class="label">生图</div><div class="proof">A/B 促销图 · 美妆视觉 · 四模型评测</div></div>
-      <div class="stage solid"><div class="label">生视频 / 3D</div><div class="proof">UGC 工作流 · product3d · 爆款复刻</div></div>
-      <div class="stage solid"><div class="label">剪辑 / 配音</div><div class="proof">剪映 · Premiere · 进度条 skill</div></div>
-      <div class="stage half"><div class="label">数字人</div><div class="proof">做过规划，没上线</div></div>
-      <div class="stage solid"><div class="label">做成工具</div><div class="proof">Lark 机器人 · 云端任务 · 工作台</div></div>
-    </div>
-    <p class="muted" style="margin-top:40px">常用：Midjourney · Stable Diffusion · ComfyUI · GPT Image · 即梦 · 豆包 · Lovart · 剪映 · Premiere · Claude Code · Codex · Cursor · Lark / 飞书 · Photoshop · Illustrator · Figma</p>
-  </div>
-</section>
-
-<!-- ========== 奖项 ========== -->
-<section class="panel" data-panel="awards">
-  <div class="section">
-    <p class="eyebrow">比赛、认证、邀请</p>
-    <h2>状态如实写：已提交、已认证、受邀。</h2>
-    <table>
-      <thead><tr><th>项目</th><th>主办</th><th>状态</th></tr></thead>
-      <tbody>
-        <tr><td>product3d-studio</td><td>群核科技黑客松</td><td><span class="status">已提交</span></td></tr>
-        <tr><td>Offer 加速器</td><td>观猹环球黑客松 · 支付宝 AI 付 PAYATHON 2026</td><td><span class="status">已提交 · 公开展示</span></td></tr>
-        <tr><td>投诉有门</td><td>支付宝智能体涌现奖</td><td><span class="status">审核中</span></td></tr>
-        <tr><td>电商线框策略 Agent Skill</td><td>阿里云百炼</td><td><span class="status">首批认证开发者</span></td></tr>
-        <tr><td>AI 工具与工作流</td><td>商汤小浣熊布道师计划</td><td><span class="status">准布道师</span></td></tr>
-        <tr><td>AI 工具讲师</td><td>刺猬星球（杭州）</td><td><span class="status">受邀</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- ========== 社区 ========== -->
-<section class="panel" data-panel="community">
-  <div class="section">
-    <p class="eyebrow">社区</p>
-    <h2>讲、写、活动。</h2>
-    <div class="grid-3">
-      <div class="card"><h3>汇报与培训</h3><ul><li><a href="work/thailand-ai-market.html">泰国 AI 变现：市场调研与方案汇报（两轮，面向决策层）</a></li><li>每个上线工具的团队演示和中泰双语使用说明</li></ul></div>
-      <div class="card"><h3>文章与评测</h3><ul><li class="placeholder">四款生图模型同题评测：即梦 · 豆包 · Lovart · GPT Image（抖音视频）— 链接</li><li class="placeholder">品牌出海长文：中国品牌在泰国（X）— 链接</li><li class="placeholder">阿里云百炼开源案例 — 链接</li></ul><p class="muted" style="margin-top:14px">6,000+ 粉 · 单条 14 万播放 · 400 人社群</p></div>
-      <div class="card"><h3>活动</h3><p class="muted">2025–2026 参加的 AI 大会、黑客松和线下社群。</p></div>
-    </div>
-    <div class="wall">
-      <figure><div class="ph"></div><figcaption class="placeholder">活动 · 时间</figcaption></figure>
-      <figure><div class="ph"></div><figcaption class="placeholder">活动 · 时间</figcaption></figure>
-      <figure><div class="ph"></div><figcaption class="placeholder">活动 · 时间</figcaption></figure>
-      <figure><div class="ph"></div><figcaption class="placeholder">活动 · 时间</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- ========== 关于 ========== -->
-<section class="panel" data-panel="about">
-  <div class="section">
-    <p class="eyebrow">关于</p>
-    <h2>设计 → 电商 AIGC → 创作者与构建者 → 应用 AI。</h2>
-    <div class="timeline">
-      <div class="step"><div class="when">2019 – 2023</div><h3>设计</h3><p class="muted">浙江财经大学视觉传达设计。阿里 × 哈佛商业评论中文版孵化项目数字营销设计实习。</p></div>
-      <div class="step"><div class="when">2024 – 2026</div><h3>电商 AIGC</h3><p class="muted">品牌设计师、高级电商设计师。Midjourney、SD、ComfyUI 进美妆和家清品牌的日常生产。</p></div>
-      <div class="step"><div class="when">2025 –</div><h3>创作者与构建者</h3><p class="muted">AI 内容账号、开源工作流、黑客松产品、百炼认证开发者。</p></div>
-      <div class="step"><div class="when">2026 –</div><h3>东南亚应用 AI 负责人</h3><p class="muted">跨境达人营销集团唯一的 AI 负责人，曼谷 → 胡志明。</p></div>
-    </div>
-    <p style="margin-top:40px" class="muted">中文母语 · 英语：读写专业水平，口语可交流 · 泰语入门<br>现居胡志明市 · 可搬迁</p>
-  </div>
-</section>
-
-<footer>
-  <span>© 2026 车杭忆 Hangyi Che</span>
-  <a href="mailto:chehangyiii@gmail.com">chehangyiii@gmail.com</a>
-  <a href="https://www.linkedin.com/in/chehangyi" target="_blank" rel="noopener">LinkedIn</a>
-  <a href="https://github.com/ChecheChat" target="_blank" rel="noopener">GitHub</a>
-</footer>
+    <footer>
+      © 2026 车杭忆 Hangyi Che · 中文母语 · 英语读写专业水平、口语可交流 · 泰语入门 · 现居胡志明市，可搬迁
+    </footer>
+  </main>
+</div>
 
 <script>
-  const panels = document.querySelectorAll('.panel');
-  const links = document.querySelectorAll('[data-tab]');
-  function show(name) {
-    if (![...panels].some(p => p.dataset.panel === name)) name = 'home';
-    panels.forEach(p => p.classList.toggle('active', p.dataset.panel === name));
-    links.forEach(a => a.classList.toggle('active', a.classList.contains('item') && a.dataset.tab === name));
-    window.scrollTo(0, 0);
-  }
-  links.forEach(a => a.addEventListener('click', e => { e.preventDefault(); history.pushState(null, '', '#' + a.dataset.tab); show(a.dataset.tab); }));
-  window.addEventListener('popstate', () => show(location.hash.slice(1)));
-  show(location.hash.slice(1));
+  const links = document.querySelectorAll('.menu a');
+  const secs = [...links].map(a => document.querySelector(a.getAttribute('href')));
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)); });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  secs.forEach(s => s && io.observe(s));
 </script>
 </body>
 </html>
