@@ -14,8 +14,8 @@
   <aside class="side">
     <div>
       <h1>车杭忆</h1>
-      <p class="role">AI 内容解决方案 · 应用 AI</p>
-      <p class="intro">设计师出身。我把 AI 内容做出来，做成团队每天在用的工具，再讲给付钱的人听。</p>
+      <p class="role">AI 产品经理 · FDE</p>
+      <p class="intro">电商设计师 → AI 创作者 → AI 产品经理。现在负责一家东南亚集团的 AI 落地和企业 AI 培训。</p>
       <ul class="menu">
         <li><a href="#about">关于</a></li>
         <li><a href="#experience">经历</a></li>
@@ -39,9 +39,13 @@
     <!-- 关于 -->
     <section id="about" class="prose">
       <h2>关于</h2>
-      <p>我学的是视觉传达，做了几年电商和品牌设计，2024 年开始把 Midjourney、Stable Diffusion、ComfyUI 放进日常生产，给美妆和家清品牌做图。两年下来，AI 生图是我用得最熟的一段。</p>
-      <p>2025 年起我自己跑 AI 内容账号、开源工作流、投黑客松，学会了用代码把流程做成工具。2026 年到东南亚，成了一家跨境达人营销集团<b>唯一的 AI 负责人</b>：听团队说卡在哪，出方案，上线，培训，按反馈迭代。现在泰国和越南的同事每天在用的几个工具，都是这样来的。</p>
-      <p>我最在意的不是模型多新，而是<b>做出来的东西有没有人用、省了多少、好不好讲清楚</b>。</p>
+      <p>三步走到今天：</p>
+      <div class="path">
+        <div class="step"><div class="k">01 · 2019 – 2024</div><div class="t">电商平台设计师</div><p class="d">视觉传达出身。天猫、京东、拼多多的详情页、促销图、直播间视觉；2024 年起把 Midjourney、SD、ComfyUI 放进日常生产，给美妆和家清品牌做图。</p></div>
+        <div class="step"><div class="k">02 · 2025 –</div><div class="t">AI 创作者</div><p class="d">自己跑 AI 内容账号，开源工作流，投黑客松。6,000+ 粉、单条 14 万播放、400 人社群，阿里云百炼首批认证开发者。学会了用代码把流程做成工具。</p></div>
+        <div class="step"><div class="k">03 · 2026 –</div><div class="t">AI 产品经理 · FDE</div><p class="d">一家东南亚跨境达人营销集团唯一的 AI 负责人：负责泰国、越南的 AI 落地，给业务团队做 AI 培训。公司下一步要做面向海外的 AI 产品。</p></div>
+      </div>
+      <p>我的做法一直是一样的：<b>听团队说卡在哪 → 出方案 → 上线 → 培训 → 按反馈迭代</b>。我最在意的不是模型多新，而是做出来的东西<b>有没有人在用、省了多少、讲不讲得清</b>。</p>
       <p class="placeholder">[待定：这里要不要放一张照片？]</p>
     </section>
 
@@ -98,13 +102,109 @@
     <section id="projects">
       <h2>项目</h2>
 
+      <div class="group"><span class="folder"></span>正在做：集团 AI 项目看板（2026.10 — ）</div>
+      <p class="sub">泰国 · 已经在用</p>
+
+      <a class="row proj" href="work/zh/creator-crm-bee.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">达人 CRM <span class="arrow">↗</span></div>
+          <p class="pain"><b>痛点</b>：BD 的达人表散在 Google Drive 的 35 张表里，重复、看不出谁合作过。</p>
+          <p class="pain"><b>解决</b>：同步到 Lark 企业资产，合成一张达人总表，按品类、粉丝量、合作记录筛选；评分、查重提醒、仪表盘。</p>
+          <p class="pain"><b>谁在用</b>：泰国 BD 团队，每天。</p>
+          <div class="num">1,344 位达人 · 35 张表合成 1 张</div>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">Lark Base</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/zh/trend-assistant.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">文旅热点监测 <span class="arrow">↗</span></div>
+          <p class="pain"><b>痛点</b>：中泰双语编导每天早上手动翻几个平台找文旅热点和低粉爆款，选题靠感觉。</p>
+          <p class="pain"><b>解决</b>：每天 9:30 推中泰双语选题卡到 Lark，每个选题附为什么爆和混剪方案，给剪辑组直接参考。</p>
+          <p class="pain"><b>谁在用</b>：泰国内容团队和剪辑组，每天。</p>
+          <div class="num">v1.0 → v2.4 两周，三轮团队反馈全部落地</div>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span class="chip">Lark 机器人</span></div>
+        </div>
+      </a>
+
+      <a class="row proj" href="work/zh/expo-intel.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">展会情报 <span class="arrow">↗</span></div>
+          <p class="pain"><b>痛点</b>：东南亚和国内的展会、峰会散在各处，业务要自己翻，漏掉就错过。</p>
+          <p class="pain"><b>解决</b>：每天自动搜集，整理成日报推 Lark：新增活动、两周内开幕、报名即将截止。</p>
+          <p class="pain"><b>谁在用</b>：全公司订阅。</p>
+          <div class="num">85 场 · v1.0 → v1.4</div>
+          <div class="chips"><span class="chip build">做成工具</span></div>
+        </div>
+      </a>
+
+      <p class="sub">泰国 · 正在推进</p>
+
+      <div class="row proj">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">KOL 达人筛选</div>
+          <p class="pain"><b>痛点</b>：每个项目的达人需求口径不一，BD 各找各的，初筛耗时间。</p>
+          <p class="pain"><b>解决</b>：统一企业 brief 需求表，数字员工按表初筛达人，名单平分给 BD；建联和报价仍由人工做。</p>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">推进中</span></div>
+        </div>
+      </div>
+
+      <div class="row proj">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">KOC 数字员工</div>
+          <p class="pain"><b>痛点</b>：KOC 量大，人工一个个建联跟不上。</p>
+          <p class="pain"><b>解决</b>：用 LINE / Facebook 官方号建群招募达人，自动建联。</p>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">推进中</span></div>
+        </div>
+      </div>
+
+      <p class="sub">越南</p>
+
+      <a class="row proj" href="work/zh/short-video-workbench.html">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">短视频内容工作台 <span class="arrow">↗</span></div>
+          <p class="pain"><b>痛点</b>：短视频团队的产品拆解、竞品拉片、脚本全靠人工，一个新品 2～3 人做 3 天；拉片标准在每个人脑子里。</p>
+          <p class="pain"><b>解决</b>：上传产品资料和爆款视频，自动做产品分析和拉片，再批量出脚本。建在团队 8 阶段 SOP 上。</p>
+          <p class="pain"><b>谁在用</b>：越南短视频团队，试点中。</p>
+          <div class="num">产品拆解到初版脚本：2～3 人 3 天 → 1 人一个下午</div>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span class="chip">试点中</span></div>
+        </div>
+      </a>
+
+      <div class="row proj">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">直播运营数字分身「小 luo」</div>
+          <p class="pain"><b>痛点</b>：直播群里每天的销量和各项调整散在聊天记录里，负责人晚上要自己翻。</p>
+          <p class="pain"><b>解决</b>：每天 21:30 自动汇总直播群的销量和调整，发日报给直播负责人；每周出品牌周报。</p>
+          <p class="pain"><b>谁在用</b>：直播运营负责人，每天。</p>
+          <div class="chips"><span class="chip build">做成工具</span><span class="chip">已上线</span></div>
+        </div>
+      </div>
+
+      <div class="row proj">
+        <div class="thumb"></div>
+        <div>
+          <div class="title">AI 视频流程 · 越南达人建联</div>
+          <p class="pain">AI 视频流程资料整理中；越南达人建联等泰国 KOC 跑通后，换成 Zalo 复制过来。</p>
+          <div class="chips"><span class="chip">规划中</span></div>
+        </div>
+      </div>
+
       <div class="group"><span class="folder"></span>AI 生图、生视频、3D</div>
 
       <a class="row proj" href="work/zh/viral-remake.html">
         <div class="thumb"></div>
         <div>
           <div class="title">爆款逆向复刻 <span class="arrow">↗</span></div>
-          <p>选一条 TikTok 电商爆款，逐镜拆解，用 Seedance / 即梦为另一个商品重做，剪映配音加字幕。全程记录每一步的工具、次数、成本、翻车点。</p>
+          <p class="pain"><b>痛点</b>：客户问「能不能像那条爆款那样做一条」，没人说得清 AI 能不能做、要多少钱多少时间。</p>
+          <p class="pain"><b>解决</b>：拆一条 TikTok 电商爆款，用 Seedance / 即梦为另一个商品重做，记录每步的工具、次数、成本、翻车点。</p>
           <div class="num placeholder">[本周做：成本 · 耗时 · 次数]</div>
           <div class="chips"><span class="chip make">做出来</span><span class="chip">Seedance</span><span class="chip">即梦</span><span class="chip">剪映</span></div>
         </div>
@@ -114,8 +214,10 @@
         <div class="thumb"></div>
         <div>
           <div class="title">跨境 UGC 短视频工作流 <span class="arrow">↗</span></div>
-          <p>元极 AI 上的公开模板：商品图和模特图进，一条 UGC 短视频出。六个 agent 串起来：产品分析 → 创意策略 → 视觉风格 → 分镜 → 配音字幕 → 生视频。</p>
-          <div class="num">6 个 agent · 公开模板，别人在用</div>
+          <p class="pain"><b>痛点</b>：跨境卖家要大量 UGC 风格短视频，找达人拍贵且慢，自己拍没人手。</p>
+          <p class="pain"><b>解决</b>：元极 AI 上的公开模板，六个 agent：产品分析 → 创意策略 → 视觉风格 → 分镜 → 配音字幕 → 生视频。商品图和模特图进，UGC 短视频出。</p>
+          <p class="pain"><b>谁在用</b>：平台上的公开模板，其他卖家在用。</p>
+          <div class="num">6 个 agent · 公开模板</div>
           <div class="chips"><span class="chip make">做出来</span><span class="chip build">做成工具</span><span class="chip">元极 AI</span></div>
         </div>
       </a>
@@ -124,7 +226,9 @@
         <div class="thumb"></div>
         <div>
           <div class="title">AI 批量 A/B 促销图 <span class="arrow">↗</span></div>
-          <p>一个案例拆开看：需求 → 参考板 → 提示词结构 → 原图（含废图）→ 选图标准 → 修图 → 上线 A/B。Midjourney / SD / ComfyUI 场景合成。</p>
+          <p class="pain"><b>痛点</b>：大促要大量 A/B 版本促销图测点击，传统做法 10 张图约 3 天，每个版本都重来一遍。</p>
+          <p class="pain"><b>解决</b>：Midjourney / SD / ComfyUI 场景合成的批量出图流程：需求 → 参考板 → 提示词结构 → 生成含废图 → 选图标准 → 修图 → 上线。</p>
+          <p class="pain"><b>谁在用</b>：德国家清品牌的天猫、京东、拼多多团队。</p>
           <div class="num">10 张图：约 3 天 → 1～1.5 天</div>
           <div class="chips"><span class="chip make">做出来</span><span class="chip">Midjourney</span><span class="chip">ComfyUI</span></div>
         </div>
@@ -134,7 +238,8 @@
         <div class="thumb"></div>
         <div>
           <div class="title">product3d-studio <span class="arrow">↗</span></div>
-          <p>一张商品照片 → 3D 模型、三视图、转盘视频、换色款、AR 和分享页。群核科技黑客松参赛项目，用主办方的 3D 模型。</p>
+          <p class="pain"><b>痛点</b>：电商要三视图、转盘视频、换色款、AR 预览，传统要建模师一个个做。</p>
+          <p class="pain"><b>解决</b>：一张商品照片 → 3D 模型、三视图、转盘视频、换色款、AR、分享页。群核科技黑客松参赛，用主办方的 3D 模型。</p>
           <div class="num">1 张图 → 3D + 视频 · 代码公开</div>
           <div class="chips"><span class="chip make">做出来</span><span class="chip build">做成工具</span><span class="chip">3D</span></div>
         </div>
@@ -144,7 +249,8 @@
         <div class="thumb"></div>
         <div>
           <div class="title">美妆品牌 AI 视觉（VPRO） <span class="arrow">↗</span></div>
-          <p>品牌 0 到 1，Midjourney 产出产品视觉和品牌内容，替代大部分模特摄影和 3D 渲染。</p>
+          <p class="pain"><b>痛点</b>：新美妆品牌 0 到 1，视觉要快、预算有限，模特摄影和 3D 渲染既贵又慢。</p>
+          <p class="pain"><b>解决</b>：Midjourney 产出产品视觉和品牌内容，替代大部分模特摄影和 3D 渲染。</p>
           <div class="chips"><span class="chip make">做出来</span><span class="chip">Midjourney</span></div>
         </div>
       </a>
@@ -162,60 +268,14 @@
         </div></div>
       </div>
 
-      <div class="group"><span class="folder"></span>做成工具（团队在用）</div>
-
-      <a class="row proj" href="work/zh/short-video-workbench.html">
-        <div class="thumb"></div>
-        <div>
-          <div class="title">短视频内容工作台 <span class="arrow">↗</span></div>
-          <p>上传产品和品牌资料 → 自动拆解 TikTok 爆款（开头 / 中段 / 结尾）→ 生成脚本。建在团队 8 阶段短视频 SOP 上，用真实品牌跑过多轮。</p>
-          <div class="num">产品拆解到初版脚本：2～3 人 3 天 → 1 人一个下午 · 团队试用中</div>
-          <div class="chips"><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span class="chip">LLM</span></div>
-        </div>
-      </a>
-
-      <a class="row proj" href="work/zh/trend-assistant.html">
-        <div class="thumb"></div>
-        <div>
-          <div class="title">文旅热点·爆款助手 <span class="arrow">↗</span></div>
-          <p>每天扫约 120 条候选，选出 8～11 个选题，附为什么爆和混剪方案，9:30 推中泰双语卡片到 Lark。云端跑，电脑关机照常推。</p>
-          <div class="num">v1.0 → v2.4 两周，三轮团队反馈全部落地 · 每天在用</div>
-          <div class="chips"><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span class="chip">Lark 机器人</span></div>
-        </div>
-      </a>
-
-      <a class="row proj" href="work/zh/creator-crm-bee.html">
-        <div class="thumb"></div>
-        <div>
-          <div class="title">达人库 + BD 助理 Bee <span class="arrow">↗</span></div>
-          <p>35 张 Google 表合并去重成一个 Lark Base：合作状态、项目记录、评分、查重提醒、仪表盘。Bee 读达人的泰文消息，起草回复。</p>
-          <div class="num">1,344 位达人 · 库每天在用 · Bee v1.0 测试中</div>
-          <div class="chips"><span class="chip build">做成工具</span><span class="chip">Lark Base</span><span class="chip">机器人</span></div>
-        </div>
-      </a>
-
-      <a class="row proj" href="work/zh/expo-intel.html">
-        <div class="thumb"></div>
-        <div>
-          <div class="title">展会情报助手 <span class="arrow">↗</span></div>
-          <p>每周一、四自动搜集东南亚展会，推日报到 Lark。</p>
-          <div class="num">全公司订阅 · v1.0 → v1.4</div>
-          <div class="chips"><span class="chip build">做成工具</span></div>
-        </div>
-      </a>
-
-      <div class="row" style="display:block">
-        <div class="title">更早的工具</div>
-        <p class="placeholder">[待补] 直播群小 luo（每日总结、品牌周报）· AI 活动雷达 · Tldraw 微信小程序 · 其他小程序</p>
-      </div>
-
       <div class="group"><span class="folder"></span>比赛与独立产品</div>
 
       <a class="row proj" href="https://offer-jiasu-pay.netlify.app" target="_blank" rel="noopener">
         <div class="thumb"></div>
         <div>
           <div class="title">Offer 加速器 <span class="arrow">↗</span></div>
-          <p>投了观猹环球黑客松和支付宝 AI 付 PAYATHON 2026，作品公开展示中。</p>
+          <p class="pain"><b>痛点</b>：求职者改简历、对岗位、准备面试，每一步都靠自己摸。</p>
+          <p class="pain"><b>解决</b>：一个把简历、岗位匹配和面试准备串起来的工具。投了观猹环球黑客松和支付宝 AI 付 PAYATHON 2026，作品公开展示中。</p>
           <div class="chips"><span class="chip build">做成工具</span><span class="chip">已提交</span></div>
         </div>
       </a>
@@ -224,7 +284,8 @@
         <div class="thumb"></div>
         <div>
           <div class="title">投诉有门 <span class="arrow">↗</span></div>
-          <p>帮你写投诉、找对投诉渠道。支付宝智能体涌现奖，审核中。</p>
+          <p class="pain"><b>痛点</b>：普通人遇到消费纠纷，不知道投诉信怎么写、该投到哪。</p>
+          <p class="pain"><b>解决</b>：帮你写投诉、找对投诉渠道。支付宝智能体涌现奖，审核中。</p>
           <div class="chips"><span class="chip build">做成工具</span><span class="chip">审核中</span></div>
         </div>
       </a>
@@ -233,10 +294,16 @@
         <div class="thumb"></div>
         <div>
           <div class="title">电商线框策略 Agent Skill <span class="arrow">↗</span></div>
-          <p>从市场和竞品资料生成电商视觉线框策略，按上线反馈持续优化。阿里云百炼首批认证开发者。</p>
+          <p class="pain"><b>痛点</b>：电商视觉的版式策略靠设计师经验，换人就断。</p>
+          <p class="pain"><b>解决</b>：从市场和竞品资料生成线框策略，按上线反馈持续优化。开源，阿里云百炼首批认证开发者。</p>
           <div class="chips"><span class="chip build">做成工具</span><span class="chip">开源</span></div>
         </div>
       </a>
+
+      <div class="row" style="display:block">
+        <div class="title">更早的工具</div>
+        <p class="placeholder">[待补] AI 活动雷达 · Tldraw 微信小程序 · 其他小程序</p>
+      </div>
     </section>
 
     <!-- 文章与认证 -->
