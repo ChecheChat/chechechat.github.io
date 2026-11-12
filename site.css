@@ -259,3 +259,30 @@ footer { color: var(--muted); font-size: 13px; margin-top: 60px; }
 .lanes ul { margin: 0; padding-left: 16px; font-size: 13.5px; }
 .lanes li { margin-bottom: 2px; }
 @media (max-width: 520px) { .lanes { grid-template-columns: 1fr; } }
+
+/* wireframes: what the user sees (Lark card / Base table / app screen), drawn, not screenshots */
+.proto { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; margin: 16px 0 6px; align-items: start; }
+@media (max-width: 640px) { .proto { grid-template-columns: 1fr; } }
+.wire { border: 1.5px solid var(--fg-strong); border-radius: 10px; padding: 12px; background: var(--bg); color: var(--fg); font-size: 11.5px; line-height: 1.5; position: relative; }
+.wire .cap { position: absolute; top: -9px; left: 12px; background: var(--bg); padding: 0 6px; font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.wire .bar { height: 8px; border-radius: 4px; background: var(--line); margin: 4px 0; }
+.wire .bar.w60 { width: 60%; } .wire .bar.w80 { width: 80%; } .wire .bar.w40 { width: 40%; }
+.wire .hd { font-weight: 700; color: var(--fg-strong); font-size: 12.5px; padding-bottom: 6px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.wire .grp { font-weight: 600; color: var(--fg-strong); margin: 8px 0 2px; }
+.wire .item { padding: 5px 0 5px 10px; border-left: 2px solid var(--line); margin: 4px 0; }
+.wire .item .th { font-weight: 600; color: var(--fg-strong); }
+.wire .item .zh { color: var(--muted); }
+.wire .ic { color: var(--muted); font-size: 10.5px; margin-top: 2px; }
+.wire .btns { display: flex; gap: 6px; margin-top: 10px; }
+.wire .btns span { flex: 1; text-align: center; border: 1px solid var(--line); border-radius: 6px; padding: 4px 0; font-size: 10.5px; color: var(--fg-strong); }
+.wire .note { display: inline-block; background: var(--accent); color: var(--bg); border-radius: 999px; font-size: 9.5px; font-weight: 700; padding: 0 6px; margin-left: 4px; vertical-align: 1px; }
+.wire table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.wire th, .wire td { border: 1px solid var(--line); padding: 4px 6px; text-align: left; vertical-align: top; }
+.wire th { color: var(--fg-strong); background: var(--bg-soft); font-weight: 600; white-space: nowrap; }
+.wire td { color: var(--muted); }
+.wire td .bar { margin: 2px 0; }
+.wire .tabs { display: flex; gap: 10px; margin-bottom: 8px; color: var(--muted); }
+.wire .tabs span { padding-bottom: 3px; } .wire .tabs .on { color: var(--fg-strong); border-bottom: 2px solid var(--accent); font-weight: 600; }
+.wire .grow { color: var(--fg-strong); font-weight: 600; background: var(--bg-soft); }
+.proto-notes { font-size: 12.5px; color: var(--muted); margin: 8px 0 0; }
+.proto-notes .note { display: inline-block; background: var(--accent); color: var(--bg); border-radius: 999px; font-size: 9.5px; font-weight: 700; padding: 0 6px; margin-right: 4px; vertical-align: 1px; }
