@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>展会情报助手 · 车杭忆</title>
-<link rel="stylesheet" href="../../site.css?v=10">
+<link rel="stylesheet" href="../../site.css?v=11">
 </head>
 <body>
 <article class="detail">
@@ -13,16 +13,49 @@
   <div class="meta"><span>2026.10 — 至今</span><span class="chip build">做成工具</span><span>给：电商商务团队（BD）</span></div>
   <p>每天 7:00 上网搜越南、泰国、马来西亚、日本和中国国内的电商平台活动和行业展会，官网核实后写进多维表格；9:30 把「展会日报」私聊推给订阅的同事。没有界面：表格是主体，机器人只做提醒。</p>
 
+  <h2>解决了什么</h2>
   <div class="facts">
-    <div><div class="k">谁在用</div><div class="v">商务团队，订阅制私聊</div></div>
-    <div><div class="k">上线</div><div class="v">2026-10-02 · v1.0 → v1.4</div></div>
-    <div><div class="k">沉淀</div><div class="v">约 140 场活动，四国 + 国内</div></div>
+    <div><div class="k">沉淀</div><div class="v big">约 140 场活动</div></div>
+    <div><div class="k">谁在用</div><div class="v">商务团队（BD），订阅制</div></div>
+    <div><div class="k">状态</div><div class="v">使用中 · 每天 9:30</div></div>
   </div>
+  <p>公司对接品牌方和达人，拓客最有效的场合是大型展会和平台卖家大会。但活动分散在越南、泰国、马来西亚、日本加国内，日期散落在各家官网，没人每天盯，经常知道的时候报名已经截止。现在每天自动搜、官网核实、写进一张表，早上一张日报：新增几场、哪些 7 天内截止、已报名的撞不撞期。BD 刷一眼，看到合适的点进去报名。</p>
 
-  <h2>痛点</h2>
-  <p>公司对接品牌方和达人，拓客最有效的场合是大型展会和平台卖家大会——品牌、平台、渠道都在那儿。但活动分散在四个国家加国内，日期散落在各家官网，没有人每天盯，经常知道的时候报名已经截止。</p>
+  <h2>产品展示</h2>
+  <p>没有 App：一张私聊日报卡片，加一张多维表格。线框是结构，真截图在下面对照。</p>
+  <div class="proto">
+    <div class="wire">
+      <div class="cap">私聊日报 · 每天 9:30</div>
+      <div class="hd">📅 展会日报 · 11-13 <span class="note">1</span></div>
+      <div class="grp">🆕 本次更新 4 场</div>
+      <div class="item"><div class="th">🌏 东南亚 +2</div><div class="zh">📍 曼谷 · 胡志明 &nbsp; 🏷️ 美妆 · 母婴</div></div>
+      <div class="item"><div class="th">🇨🇳 国内 +1</div><div class="zh">📍 深圳 &nbsp; 🏷️ 跨境电商</div></div>
+      <div class="item"><div class="th">🇯🇵 日本 +1</div><div class="zh">📍 东京 &nbsp; 🏷️ 美妆</div></div>
+      <div class="grp">⏰ 7 天内截止 <span class="note">2</span></div>
+      <div class="item"><div class="bar w80"></div></div>
+      <div class="grp">✅ 你们已报名 <span class="note">3</span></div>
+      <div class="item"><div class="bar w60"></div><div class="zh" style="color:#e5484d">⚠ 与 ×× 撞期</div></div>
+      <div class="btns"><span>🌏 东南亚</span><span>🇨🇳 国内</span><span>🇯🇵 日本</span></div>
+    </div>
+    <div class="wire">
+      <div class="cap">多维表格「东南亚展会情报」</div>
+      <div class="tabs"><span>全部</span><span class="on">🌏 东南亚</span><span>🇨🇳 国内</span><span>🇯🇵 日本</span><span class="note">4</span></div>
+      <table>
+        <tr><th>活动名称</th><th>品类</th><th>开始</th><th>地点</th><th>报名链接</th><th>截止</th><th>状态 <span class="note">5</span></th></tr>
+        <tr><td colspan="7" class="grow">2026-12</td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>12-24</td><td>胡志明</td><td>🔗</td><td>12-10</td><td>已报名</td></tr>
+        <tr><td><div class="bar"></div></td><td>🍜</td><td>12-28</td><td>曼谷</td><td>🔗</td><td>—</td><td></td></tr>
+        <tr><td colspan="7" class="grow">2027-01</td></tr>
+        <tr><td><div class="bar"></div></td><td>🐾</td><td>01-15</td><td>吉隆坡</td><td>🔗</td><td>01-05</td><td>不考虑</td></tr>
+      </table>
+      <p class="ic" style="margin:8px 0 0">13 列，按月份分组，可按品类筛。另一张「订阅人」表：加一行选自己，第二天开始收日报。<span class="note">6</span></p>
+    </div>
+  </div>
+  <p class="proto-notes"><span class="note">1</span>只报数量，不列活动名，详情进表 <span class="note">2</span>有才显示 <span class="note">3</span>撞期红字提醒 <span class="note">4</span>四个视图，同一张表 <span class="note">5</span>BD 唯一要填的一列 <span class="note">6</span>订阅制，不用拉机器人进群</p>
+  <figure class="shot"><div class="ph"></div><figcaption class="placeholder">[待放] 真实日报和表格截图（脱敏）</figcaption></figure>
 
-  <h2>它怎么跑（SOP）</h2>
+  <details class="fold">
+    <summary>怎么跑的（给想看细节的人）</summary>
   <div class="sop">
     <div class="st">
       <div class="n">1</div>
@@ -87,17 +120,7 @@
     <li><b>不编造</b>：日期未经官网核实的不进表</li>
   </ul>
 
-  <h2>怎么迭代的</h2>
-  <ul>
-    <li>v1.0（10-02）：表格 + 首批 41 场 + 每日卡片，部署云端</li>
-    <li>v1.1（10-03）：每周自动搜集；订阅制私聊；开放全员</li>
-    <li>v1.2（10-05）：推送时间不准（有天拖到下午两点），改 cron-job.org 准时 9:30</li>
-    <li>v1.3（10-07）：覆盖公司所在四国 + 国内单独板块 + 日本单独板块；加品类和月份；日报精简成只报数量</li>
-    <li>v1.4（10-12）：搜集也搬到云端，每天 7:00；推送记录防重复；搜完晚于 9:30 自动补推</li>
-  </ul>
-
-  <h2>下一步</h2>
-  <p>把订阅名单扩到整个商务团队；展后线索回收——参展带回的品牌线索记下来，和 BD 业绩挂钩。</p>
+  </details>
 </article>
 </body>
 </html>
