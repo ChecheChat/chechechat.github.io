@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>车杭忆 · AI 内容解决方案</title>
 <meta name="description" content="设计师出身的应用 AI 构建者。会做 AI 内容，能把它做成团队每天在用的工具，还能讲给付钱的人听。">
-<link rel="stylesheet" href="site.css?v=5">
+<link rel="stylesheet" href="site.css?v=6">
 </head>
 <body>
 <div class="wrap">
@@ -42,18 +42,18 @@
       <p>设计师出身，做了三年电商品牌设计，生图是我最熟的一段。现在在东南亚做企业 AI 落地，方法一直一样：钻进一线团队每天的流程，找出耗时、重复的环节，做成他们每天在用的工具，再教会他们用。</p>
 
       <div class="strip" id="about-strip">
-        <a class="cell" href="#beat-1" data-beat="1"><img src="assets/about/01.jpg" alt="艺术市集摆摊现场"><div class="k">大学 · 2019 – 23</div><div class="t">画画、摆摊</div></a>
-        <a class="cell" href="#beat-2" data-beat="2"><img src="assets/about/02.jpg" alt="电商公司团建"><div class="k">2023 – 26</div><div class="t">电商设计</div></a>
-        <a class="cell" href="#beat-3" data-beat="3"><img src="assets/about/03.jpg" alt="AI 大会现场"><div class="k">2026 初 –</div><div class="t">AI 自媒体</div></a>
-        <a class="cell" href="#beat-4" data-beat="4"><img src="assets/about/04.jpg" alt="泰国团队聚餐"><div class="k">2026.10 –</div><div class="t">东南亚落地</div></a>
+        <button class="cell" type="button" data-beat="1" aria-expanded="false"><img src="assets/about/01.jpg" alt="艺术市集摆摊现场"><div class="k">大学 · 2019 – 23</div><div class="t">画画、摆摊</div><p class="s">自由插画师，画的东西做成周边，去艺术市集摆摊卖。</p><span class="more">展开 <i>+</i></span></button>
+        <button class="cell" type="button" data-beat="2" aria-expanded="false"><img src="assets/about/02.jpg" alt="电商公司团建"><div class="k">2023 – 26</div><div class="t">电商设计</div><p class="s">三年电商品牌设计，实习时就在用 GPT 和 Midjourney。</p><span class="more">展开 <i>+</i></span></button>
+        <button class="cell" type="button" data-beat="3" aria-expanded="false"><img src="assets/about/03.jpg" alt="AI 大会现场"><div class="k">2026 初 –</div><div class="t">AI 自媒体</div><p class="s">边上班边学 AI，把学习过程做成视频和文章，6,000+ 粉。</p><span class="more">展开 <i>+</i></span></button>
+        <button class="cell" type="button" data-beat="4" aria-expanded="false"><img src="assets/about/04.jpg" alt="泰国团队聚餐"><div class="k">2026.10 –</div><div class="t">东南亚落地</div><p class="s">离职只找 AI + 跨境，10 月入职，base 曼谷 / 胡志明。</p><span class="more">展开 <i>+</i></span></button>
       </div>
 
-      <ol class="beats">
-        <li id="beat-1"><div class="h"><span class="n">01</span>画画、摆摊、把故事讲给人听</div><p>大学时做自由插画师，把画的东西做成文创周边，去艺术市集摆摊卖。第一次知道「有没有人买」比「画得好不好」更难，也更有意思。</p></li>
-        <li id="beat-2"><div class="h"><span class="n">02</span>三年电商品牌设计，最早一批把 AI 用进生产</div><p>毕业进电商：知专实习、聚子生物、飞比晴，做天猫、京东、拼多多的详情页、促销图、直播间视觉。实习时就在用 GPT 和 Midjourney，到飞比晴把 Midjourney、SD、ComfyUI 放进日常出图。</p></li>
-        <li id="beat-3"><div class="h"><span class="n">03</span>边上班边学 AI，把学习过程做成内容</div><p>2026 年初 AI 爆发，白天上班，晚上学 Agent、写代码、投黑客松，把学到的做成视频和文章。6,000+ 粉、单条 14 万播放。也是在这段时间学会了用代码把流程做成工具。</p></li>
-        <li id="beat-4"><div class="h"><span class="n">04</span>离开，去东南亚做 AI 落地</div><p>8 月底离开上一家公司，只找 AI + 跨境方向。10 月 1 日入职一家东南亚跨境达人营销集团，base 曼谷和胡志明，是泰国、越南两边唯一做 AI 的人：做工具，也给业务团队做 AI 培训。</p></li>
-      </ol>
+      <div class="beat-panel" id="beat-panel" hidden>
+        <div class="beat" data-beat="1"><div class="h"><span class="n">01</span>画画、摆摊、把故事讲给人听</div><p>大学时做自由插画师，把画的东西做成文创周边，去艺术市集摆摊卖。第一次知道「有没有人买」比「画得好不好」更难，也更有意思。</p></div>
+        <div class="beat" data-beat="2"><div class="h"><span class="n">02</span>三年电商品牌设计，最早一批把 AI 用进生产</div><p>毕业进电商：知专实习、聚子生物、飞比晴，做天猫、京东、拼多多的详情页、促销图、直播间视觉。实习时就在用 GPT 和 Midjourney，到飞比晴把 Midjourney、SD、ComfyUI 放进日常出图。</p></div>
+        <div class="beat" data-beat="3"><div class="h"><span class="n">03</span>边上班边学 AI，把学习过程做成内容</div><p>2026 年初 AI 爆发，白天上班，晚上学 Agent、写代码、投黑客松，把学到的做成视频和文章。6,000+ 粉、单条 14 万播放。也是在这段时间学会了用代码把流程做成工具。</p></div>
+        <div class="beat" data-beat="4"><div class="h"><span class="n">04</span>离开，去东南亚做 AI 落地</div><p>8 月底离开上一家公司，只找 AI + 跨境方向。10 月 1 日入职一家东南亚跨境达人营销集团，base 曼谷和胡志明，是泰国、越南两边唯一做 AI 的人：做工具，也给业务团队做 AI 培训。</p></div>
+      </div>
 
       <p>我最在意的不是模型多新，而是做出来的东西<b>有没有人在用、省了多少、讲不讲得清</b>。</p>
     </section>
@@ -386,15 +386,22 @@
   }, { rootMargin: '-40% 0px -55% 0px' });
   secs.forEach(s => s && io.observe(s));
 
-  // about strip ↔ beats hover link
-  document.querySelectorAll('#about-strip .cell').forEach(c => {
-    const li = document.getElementById('beat-' + c.dataset.beat);
-    const on = v => { c.classList.toggle('on', v); li && li.classList.toggle('on', v); };
-    c.addEventListener('mouseenter', () => on(true));
-    c.addEventListener('mouseleave', () => on(false));
-    li && li.addEventListener('mouseenter', () => on(true));
-    li && li.addEventListener('mouseleave', () => on(false));
-  });
+  // about strip: click a column to expand its full text below the row
+  (() => {
+    const cells = [...document.querySelectorAll('#about-strip .cell')];
+    const panel = document.getElementById('beat-panel');
+    const beats = [...panel.querySelectorAll('.beat')];
+    let open = null;
+    const show = n => {
+      open = (open === n) ? null : n;
+      cells.forEach(c => { const on = c.dataset.beat === open; c.classList.toggle('on', on); c.setAttribute('aria-expanded', on);
+        c.querySelector('.more').innerHTML = on ? '收起 <i>−</i>' : '展开 <i>+</i>'; });
+      beats.forEach(b => b.classList.toggle('on', b.dataset.beat === open));
+      panel.hidden = !open;
+      if (open) panel.style.setProperty('--pointer', (cells.findIndex(c => c.dataset.beat === open) * 25 + 12.5) + '%');
+    };
+    cells.forEach(c => c.addEventListener('click', () => show(c.dataset.beat)));
+  })();
 </script>
 </body>
 </html>
