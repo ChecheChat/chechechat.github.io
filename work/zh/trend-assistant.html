@@ -4,35 +4,92 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>文旅热点·爆款助手 · 车杭忆</title>
-<link rel="stylesheet" href="../../site.css?v=8">
+<link rel="stylesheet" href="../../site.css?v=9">
 </head>
 <body>
 <article class="detail">
   <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
   <h1>文旅热点·爆款助手</h1>
   <div class="meta"><span>2026.10 — 至今</span><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span>给：泰国内容团队</span></div>
-  <p>每天早上 9:30，把当天值得做的文旅选题连同「为什么爆」和混剪方案，用中泰双语推到剪辑组的 Lark 群里。</p>
+  <p>每天早上 9:30，把当天值得做的文旅选题连同「为什么爆」和混剪方案，用中泰双语推到剪辑组的 Lark 群里。没有界面：它住在 Lark 里，团队在群里用，在多维表格里查。</p>
 
   <div class="facts">
     <div><div class="k">谁在用</div><div class="v">泰国内容团队 + 剪辑组，每天</div></div>
     <div><div class="k">上线</div><div class="v">2026-10-05 · v1.0 → v2.4</div></div>
-    <div><div class="k">结果</div><div class="v">两周三轮反馈全部落地</div></div>
+    <div><div class="k">结果</div><div class="v">每天早上的选题从「找」变成「挑」</div></div>
   </div>
 
-  <h2>怎么跑的</h2>
-  <div class="flow">
-    <div class="node io"><div class="k">进</div><div class="t">热榜与平台</div><div class="d">微博 / 抖音 / B 站热榜 + 东南亚平台，每天约 120 条候选</div></div>
-    <div class="node"><div class="k">筛</div><div class="t">选题筛选</div><div class="d">按文旅相关度、低粉爆款、可复刻性选 8～11 条；自动去重</div></div>
-    <div class="node"><div class="k">拆</div><div class="t">爆款拆解</div><div class="d">为什么爆、泰文标题、开头 3 秒、配音要点、横竖屏素材站链接</div></div>
-    <div class="node"><div class="k">查</div><div class="t">泰文检查</div><div class="d">推送前过一遍泰文，泰文在前中文在后</div></div>
-    <div class="node out"><div class="k">出</div><div class="t">9:30 Lark 卡片</div><div class="d">推到剪辑组群，同步存进多维表格（选题卡 / 爆款库 / 选题库）</div></div>
-    <div class="node io"><div class="k">谁看</div><div class="t">剪辑组 + 编导</div><div class="d">👍 反馈回流，决定下次的选题权重</div></div>
-  </div>
-  <p class="flow-note">跑在云端，电脑关机照常推。</p>
+  <h2>痛点</h2>
+  <p>做中国文旅视频的泰国团队，每天早上第一件事是找选题：翻热榜、看别人怎么拍、再想泰国观众能不能看懂。一个人一上午，找到的还未必是能做的。</p>
 
-  <h2>长什么样</h2>
-  <figure class="shot"><div class="ph"></div><figcaption class="placeholder">[待放] Lark 群里的选题卡片：泰文在前、中文在后，每条带「为什么爆」和混剪方案</figcaption></figure>
-  <figure class="shot"><div class="ph"></div><figcaption class="placeholder">[待放] 多维表格的爆款库：按类型分组，每条带素材站链接和横竖屏标记</figcaption></figure>
+  <h2>它怎么跑（SOP）</h2>
+  <div class="sop">
+    <div class="st">
+      <div class="n">1</div>
+      <div class="body">
+        <div class="head"><span class="t">收集</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>微博、抖音、B 站热榜 + 东南亚平台</em><span>做</span><em>每天定时抓取当天热门视频</em><span>出</span><em>约 <b>120 条</b>候选</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 数据源列表 / 抓取日志</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">2</div>
+      <div class="body">
+        <div class="head"><span class="t">筛选</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>120 条候选</em><span>做</span><em>按<b>文旅相关度、低粉爆款、可复刻性</b>打分；和爆款库比对去重</em><span>出</span><em><b>8～11 条</b></em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 筛选规则（提示词里的那段）</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">3</div>
+      <div class="body">
+        <div class="head"><span class="t">拆解</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>每条视频</em><span>做</span><em>为什么爆：结构、开头 3 秒、情绪点，按团队自己的爆款拆解逻辑</em><span>出</span><em>一张拆解卡</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 一张拆解卡</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">4</div>
+      <div class="body">
+        <div class="head"><span class="t">适配泰国</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>拆解卡</em><span>做</span><em>泰文标题、配音要点、混剪方案；配免费 / 付费素材站链接，标横竖屏</em><span>出</span><em>中泰双语方案</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 泰文方案 + 素材站链接</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">5</div>
+      <div class="body">
+        <div class="head"><span class="t">检查</span><span class="who mixed">自动 + 人</span></div>
+        <div class="io"><span>进</span><em>双语方案</em><span>做</span><em>推送前过一遍泰文；泰文在前、中文在后。拿不准的泰国同事看</em><span>出</span><em>可发的选题卡</em></div>
+      </div>
+    </div>
+    <div class="st">
+      <div class="n">6</div>
+      <div class="body">
+        <div class="head"><span class="t">推送</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>选题卡</em><span>做</span><em><b>9:30</b> 推到剪辑组 Lark 群；同步写进多维表格（选题卡 / 爆款库 / 选题库）</em><span>出</span><em>群里的卡片 + 可查的表</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] Lark 群里的卡片（脱敏）</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">7</div>
+      <div class="body">
+        <div class="head"><span class="t">用 + 反馈</span><span class="who human">人</span></div>
+        <div class="io"><span>进</span><em>当天 8～11 个选题</em><span>做</span><em>剪辑组、编导挑着拍；👍 回流</em><span>出</span><em>反馈进下一次的选题权重</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 多维表格的爆款库</figcaption></figure>
+    </div>
+  </div>
+  <p class="flow-note">跑在云端，定时触发，电脑关机照常推。</p>
+
+  <h2>人和系统各做什么</h2>
+  <div class="lanes">
+    <div class="auto"><div class="k">系统自动</div><ul><li>抓、筛、拆、翻译、配素材链接</li><li>每天 9:30 推送，写表</li><li>按 👍 调整下次权重</li></ul></div>
+    <div class="human"><div class="k">人做判断</div><ul><li>泰国同事看泰文对不对</li><li>编导决定拍哪条、怎么改</li><li>我看反馈，改规则和提示词</li></ul></div>
+  </div>
+
+  <h2>使用说明</h2>
+  <p>每个版本配一份 Lark 文档：怎么看卡片、怎么点反馈、表格里各列是什么。<span class="placeholder">[待放：使用说明截图 1 张]</span></p>
 
   <h2>怎么迭代的</h2>
   <ul>
