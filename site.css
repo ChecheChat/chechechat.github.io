@@ -187,3 +187,47 @@ footer { color: var(--muted); font-size: 13px; margin-top: 60px; }
 .facts div { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
 .facts .k { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
 .facts .v { color: var(--fg-strong); font-weight: 600; margin-top: 4px; font-size: 14px; }
+
+/* resume page */
+.resume { max-width: 960px; }
+.resume-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.resume-top .back { margin: 0; }
+.resume-actions { display: flex; gap: 10px; }
+.resume-actions a, .resume-actions button { font: inherit; font-size: 13px; color: var(--fg-strong); background: var(--bg-soft); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.resume-actions button { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.resume-head h1 { margin-bottom: 6px; }
+.resume-head h1 .en { font-size: 18px; font-weight: 500; color: var(--muted); margin-left: 10px; letter-spacing: 0; }
+.resume-head .headline { color: var(--fg); font-size: 15px; margin: 0 0 6px; }
+.resume-head .contact { color: var(--muted); font-size: 13px; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.resume-head .contact a:hover { color: var(--accent); }
+.resume-grid { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 56px; margin-top: 40px; }
+@media (max-width: 760px) { .resume-grid { grid-template-columns: 1fr; gap: 0; } }
+.resume section { margin-bottom: 8px; }
+.resume h2 { margin: 28px 0 10px; }
+.resume-side ul, .resume-main ul { padding-left: 18px; margin: 0; }
+.resume-side li { font-size: 13.5px; margin-bottom: 4px; }
+.resume-side .tools { font-size: 13.5px; margin: 0; line-height: 1.7; }
+.resume b { color: var(--fg); font-weight: 600; }
+.resume-main p { font-size: 15px; margin: 0; }
+.resume .job { margin-bottom: 22px; }
+.resume .jobhead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 6px; }
+.resume .jt { color: var(--fg-strong); font-weight: 600; font-size: 15.5px; }
+.resume .jt small { display: block; font-size: 13px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+.resume .jd { color: var(--accent); font-size: 12px; letter-spacing: .06em; white-space: nowrap; flex-shrink: 0; }
+.resume-main li { font-size: 14.5px; margin-bottom: 5px; }
+@media print {
+  :root { --bg: #fff; --bg-soft: #f3f4f6; --fg: #222; --fg-strong: #000; --muted: #555; --line: rgba(0,0,0,.15); --accent: #0369a1; --accent-soft: rgba(3,105,161,.08); }
+  @page { size: A4; margin: 12mm; }
+  body { background: #fff; }
+  .resume { max-width: none; padding: 0; }
+  .resume-top { display: none; }
+  .resume-head h1 { font-size: 26px; }
+  .resume-grid { grid-template-columns: 180px 1fr; gap: 28px; margin-top: 20px; }
+  .resume h2 { margin: 16px 0 6px; font-size: 11px; }
+  .resume-side li, .resume-side .tools { font-size: 10.5px; }
+  .resume-main p { font-size: 11.5px; }
+  .resume-main li { font-size: 11px; margin-bottom: 3px; }
+  .resume .jt { font-size: 12px; } .resume .jt small { font-size: 10.5px; } .resume .jd { font-size: 10px; }
+  .resume .job { margin-bottom: 12px; break-inside: avoid; }
+  a[href]::after { content: none; }
+}
