@@ -3,38 +3,130 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>达人库 + BD 助理 Bee · 车杭忆</title>
+<title>达人 CRM · 车杭忆</title>
 <link rel="stylesheet" href="../../site.css?v=12">
 </head>
 <body>
 <article class="detail">
   <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
-  <h1>达人库 + BD 助理 Bee</h1>
-  <div class="meta"><span>2026.10</span><span class="chip build">做成工具</span><span>给：泰国 BD 团队</span></div>
-  <div class="cover"></div>
+  <h1>达人 CRM</h1>
+  <div class="meta"><span>2026.10 — 至今</span><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span>给：泰国 BD 团队 + 中国管理层</span></div>
+  <p>把泰国 BD 散在 Google Drive 里的几十张达人表同步到 Lark，合成一张「一人一行」的达人总表：按品类和粉丝量找人、看合作过几次、打分、标黑名单。泰国团队照常用 Google，不改习惯；中国领导在 Lark 里就能看全。</p>
 
-  <h2>问题</h2>
-  <p>达人散在 35 张 Google 表和各个项目表里，重复、看不出谁合作过、合作得怎么样。新来的 BD 要用泰语询价、报价，全靠问老人。</p>
+  <h2>解决了什么</h2>
+  <div class="facts">
+    <div><div class="k">结果</div><div class="v big">35 张表 → 1 张总表</div></div>
+    <div><div class="k">谁在用</div><div class="v">泰国 BD 团队，每天</div></div>
+    <div><div class="k">状态</div><div class="v">使用中 · 自动同步</div></div>
+  </div>
+  <p>以前接到新品牌需求，BD 要翻一张张项目表找达人，同一个人在好几张表里出现，看不出谁合作过、合作得怎么样；中国这边的领导和品牌方习惯用 Lark，根本看不到 Google 里的东西。现在 1,344 位达人一人一行，按品类 → 体量分组，合作次数、平均评分、黑名单一眼看到；每个 BD 有自己的视图，领导有仪表盘看每个人的有效建联率。</p>
 
-  <h2>做了什么</h2>
-  <ul>
-    <li><b>达人库</b>：合并去重后 1,344 位达人一人一行，自动判断合作状态、记录参与项目，按 BD 分视图，录入表单；分类框架（主品类 / 粉丝体量 / 内容形式）；合作评分、查重提醒；仪表盘（项目完成、BD 跟进、每月新增、跟进漏斗）；中文使用说明</li>
-    <li>盘点发现：真实合作约 70 次，原来表上只记了 15 次</li>
-    <li><b>Bee · BD 助理</b>：把 BD 的工作拆成 30 步，从真实沟通记录里提炼 15 套话术；Lark 对话机器人接公司模型网关，语料是 BD 的 SOP、培训资料和真实达人沟通记录；读达人的泰文消息，起草回复，群内 @ 和私聊都能用</li>
-  </ul>
+  <h2>产品展示</h2>
+  <p>全部住在 Lark 多维表格里：三张互相关联的表，加一个给领导看的仪表盘。线框是结构，真截图在下面对照。</p>
+  <div class="proto">
+    <div class="wire" style="grid-column: 1 / -1">
+      <div class="cap">多维表格「泰国 BD 达人总表」</div>
+      <div class="tabs"><span class="on">全部达人</span><span>👤 我负责的 <span class="note">1</span></span><span>✅ 合作过</span><span>⭐ 高频合作</span><span>⛔ 黑名单</span></div>
+      <table>
+        <tr><th>达人</th><th>主品类</th><th>体量</th><th>粉丝</th><th>合作次数</th><th>平均评分</th><th>跟进阶段 <span class="note">2</span></th><th>⚠️ 重复 <span class="note">3</span></th></tr>
+        <tr><td colspan="8" class="grow">💄 美妆护肤 › 🌳 头部 50 万+</td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌳</td><td>820K</td><td>3</td><td>★ 4.5</td><td>④ 合作成功</td><td></td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌳</td><td>610K</td><td>1</td><td>★ 4.0</td><td>④ 合作成功</td><td></td></tr>
+        <tr><td colspan="8" class="grow">💄 美妆护肤 › 🌿 腰部 5–50 万</td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌿</td><td>120K</td><td>0</td><td>—</td><td>③ 已拿报价</td><td></td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌿</td><td>86K</td><td>0</td><td>—</td><td>① 未有效建联</td><td>ซ้ำ / 重复</td></tr>
+        <tr><td colspan="8" class="grow">🍜 美食 › 🌱 KOC 5 万以下</td></tr>
+        <tr><td><div class="bar"></div></td><td>🍜</td><td>🌱</td><td>32K</td><td>2</td><td>★ 4.8</td><td>④ 合作成功</td><td></td></tr>
+      </table>
+      <p class="ic" style="margin:8px 0 0">三张表连着：<b>项目表</b>（一个品牌项目一行，按季度 → 月份）· <b>达人总表</b>（一个达人一行）· <b>项目名单</b>（一个达人 × 一个项目：提报 / 合作 / 打分）。在名单里加一行，另外两张表自动显示。<span class="note">4</span></p>
+    </div>
+    <div class="wire">
+      <div class="cap">仪表盘 · 给领导看</div>
+      <div class="grp">BD 跟进漏斗 <span class="note">5</span></div>
+      <div class="ic">每个 BD 一根柱子，按 ① 未有效建联 / ② 有效建联 / ③ 已拿报价 / ④ 合作成功 分层</div>
+      <div style="display:flex;gap:14px;align-items:flex-end;height:90px;margin:10px 0 4px">
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div style="height:18%;background:var(--build)"></div><div style="height:20%;background:var(--accent)"></div><div style="height:12%;background:var(--explain)"></div><div style="height:50%;background:var(--line)"></div></div>
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:70%"><div style="height:22%;background:var(--build)"></div><div style="height:30%;background:var(--accent)"></div><div style="height:10%;background:var(--explain)"></div><div style="height:38%;background:var(--line)"></div></div>
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:30%"><div style="height:100%;background:var(--line)"></div></div>
+      </div>
+      <div class="ic">BD A · BD B · BD C</div>
+      <div class="grp" style="margin-top:10px">每人四个数</div>
+      <div class="ic">有效建联数 · 有效建联率 · 合作成功数 · 合作平均评分</div>
+    </div>
+    <div class="wire">
+      <div class="cap">项目名单 · 打分</div>
+      <div class="grp">📝 待评分（合作过、还没打分的）</div>
+      <div class="item"><div class="th">达人 × 项目</div><div class="zh">⏰ 准时 ★★★★☆ &nbsp; 🎬 内容 ★★★★★</div><div class="zh">📈 数据 ★★★☆☆ &nbsp; 🤝 配合 ★★★★☆</div><div class="ic">一句话评价：<span class="bar w60" style="display:inline-block;vertical-align:middle"></span></div></div>
+      <div class="item"><div class="th">达人 × 项目</div><div class="zh">之前合作过：✅ 合作过 2 次</div></div>
+      <div class="item"><div class="th">达人 × 项目</div><div class="zh">之前合作过：⛔ 黑名单 <span class="note">6</span></div></div>
+    </div>
+  </div>
+  <p class="proto-notes"><span class="note">1</span>每个 BD 只看自己的，新增达人自动填负责人和建联月份 <span class="note">2</span>按填的信息自动判断，不用手填 <span class="note">3</span>同一个账号登记过会标出来 <span class="note">4</span>所有视图是同一张表，不用同步 <span class="note">5</span>登记人数不算数，能联系上、能报价、能合作才算 <span class="note">6</span>提报前自动提醒</p>
+  <figure class="shot"><div class="ph"></div><figcaption class="placeholder">[待放] 达人总表 + 仪表盘真实截图（脱敏）</figcaption></figure>
 
-  <h2>产出</h2>
-  <div class="gallery"><div class="ph"></div><div class="ph"></div></div>
-  <p class="placeholder">[待放：达人库 / 仪表盘截图、Bee 对话截图（达人名打码）]</p>
+  <details class="fold">
+    <summary>怎么跑的（给想看细节的人）</summary>
+    <div class="sop">
+      <div class="st">
+        <div class="n">1</div>
+        <div class="body">
+          <div class="head"><span class="t">泰国团队照常用 Google</span><span class="who human">人</span></div>
+          <div class="io"><span>进</span><em>品牌项目</em><span>做</span><em>BD 在 Google 表里做项目：为这个品牌筛 10～50 个候选达人、报价、确认、执行</em><span>出</span><em>一个品牌一张 Google 表，按季度 → 月份放</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">2</div>
+        <div class="body">
+          <div class="head"><span class="t">镜像到 Lark</span><span class="who auto">自动</span></div>
+          <div class="io"><span>进</span><em>Google Drive 的文件夹和表格</em><span>做</span><em>原样搬：文件夹名、层级、表名、页签、每一列都一样，不增不减；定期同步</em><span>出</span><em>Lark 云盘里一模一样的一套</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">3</div>
+        <div class="body">
+          <div class="head"><span class="t">合成达人总表</span><span class="who auto">自动</span></div>
+          <div class="io"><span>进</span><em>所有项目表里出现过的达人</em><span>做</span><em>按账号合并成一人一行；主品类先看标签、没有就看参加过的项目；体量按粉丝自动算；合作次数、平均评分、跟进阶段自动算；查重</em><span>出</span><em>达人总表 + 项目表 + 项目名单，三张表互相关联</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">4</div>
+        <div class="body">
+          <div class="head"><span class="t">BD 登记、补信息</span><span class="who human">人</span></div>
+          <div class="io"><span>进</span><em>新建联的达人；旧表里信息不全的达人</em><span>做</span><em>在自己的视图里新增达人；按「联系方式为空」这类筛选慢慢补联系方式、报价、品类。先补合作过的，再头部腰部，最后 KOC</em><span>出</span><em>跟进阶段自动往上走，有效建联率马上变</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">5</div>
+        <div class="body">
+          <div class="head"><span class="t">提报、确认、打分、黑名单</span><span class="who human">人</span></div>
+          <div class="io"><span>进</span><em>一个项目</em><span>做</span><em>项目名单里加「达人 × 项目」，提报前自动看到合作过几次或是不是黑名单；合作后 4 项打星 + 一句话；黑名单由负责人确认后标</em><span>出</span><em>合作记录和评分回到达人总表</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">6</div>
+        <div class="body">
+          <div class="head"><span class="t">仪表盘</span><span class="who auto">自动</span></div>
+          <div class="io"><span>进</span><em>三张表</em><span>做</span><em>每个 BD 的跟进漏斗（①→④ 分层）、有效建联率、合作成功数、平均评分</em><span>出</span><em>领导看的仪表盘，BD 不用填</em></div>
+        </div>
+      </div>
+    </div>
+    <p class="flow-note">和 Google 的关系：粉丝数、联系方式、报价以 Google 为准；品类、负责 BD、评分、黑名单、备注只在 Lark 填，不会被覆盖。</p>
 
-  <h2>谁在用</h2>
-  <p>泰国 BD 团队，达人库每天在用；Bee v1.0 测试中。</p>
+    <h2>人和系统各做什么</h2>
+    <div class="lanes">
+      <div class="auto"><div class="k">系统自动</div><ul><li>Google → Lark 同步，结构内容一模一样</li><li>合并成一人一行，算体量、合作次数、评分、跟进阶段</li><li>查重提醒、黑名单提醒、仪表盘</li></ul></div>
+      <div class="human"><div class="k">人做判断</div><ul><li>BD 建联、补信息、提报、打分</li><li>负责人确认黑名单、分配没有负责人的达人</li><li>我按反馈调视图和字段</li></ul></div>
+    </div>
 
-  <h2>结果</h2>
-  <p class="num">1,344 位达人去重入库 · 35 张表合成 1 个</p>
-
-  <h2>下一步</h2>
-  <p>达人建联工具：把泰国、越南两边的建联流程整合成一套。</p>
+    <h2>关键决定</h2>
+    <ul>
+      <li><b>不改习惯</b>：泰国团队继续用 Google，Lark 跟着它变。工具迁就人，不是人迁就工具</li>
+      <li><b>镜像和 CRM 分开</b>：镜像「Google 长什么样 Lark 就什么样」，适合查原表；CRM 是整理过的，适合找人。两个都要</li>
+      <li><b>登记人数不算业绩</b>：有效建联率、合作成功数、平均评分才算，所以跟进阶段自动算，不让人填</li>
+      <li><b>视图从 9 个减到 7 个</b>：BD 日常只用「我负责的」一个</li>
+      <li><b>只对内</b>：给品牌方看的版本以后单独做</li>
+    </ul>
+  </details>
 </article>
 </body>
 </html>

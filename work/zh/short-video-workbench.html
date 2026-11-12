@@ -10,32 +10,122 @@
 <article class="detail">
   <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
   <h1>短视频内容工作台</h1>
-  <div class="meta"><span>2026.10 — 进行中</span><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span>给：越南短视频团队</span></div>
-  <div class="cover"></div>
+  <div class="meta"><span>2026.10 — 进行中</span><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span>给：越南短视频运营团队</span></div>
+  <p>一个网页工具：上传产品资料和爆款视频，自动出产品分析、爆款拉片和拍摄脚本，勾选后导出拍摄表给编导。建在团队自己的 8 阶段短视频 SOP 上，做的是前三步：产品拆解、竞品拉片、写脚本。</p>
 
-  <h2>问题</h2>
-  <p>短视频团队从产品研究到数据复盘有 8 个阶段，前三步——产品拆解、竞品拉片、写脚本——全靠人工。一个新产品要 2～3 个人做 3 天才能出第一版脚本，拉片的标准在每个人脑子里，不统一。</p>
+  <h2>解决了什么</h2>
+  <div class="facts">
+    <div><div class="k">结果</div><div class="v big">2～3 人 3 天 → 1 人一下午</div></div>
+    <div><div class="k">谁在用</div><div class="v">越南短视频运营，真实项目试点</div></div>
+    <div><div class="k">状态</div><div class="v">试点中 · v0.15</div></div>
+  </div>
+  <p>一个新产品要出第一版脚本，以前是两三个人做三天：读资料、拆卖点、一条条看爆款、再写。拉片的标准在每个人脑子里，不统一。现在把资料传进去，产品分析、爆款拆解、第一批脚本自动串着跑，运营只做三件事：改匹配表、审脚本、勾选导出。拉片标准写进了提示词，经验变成所有人共用的规则。</p>
 
-  <h2>做了什么</h2>
-  <ul>
-    <li>先把 8 阶段 SOP 梳理出来：产品与人群研究 → 卖点痛点拆解 → 爆款拉片 → 脚本生产 → 分镜拍摄 → 剪辑 → 投放测试 → 数据复盘</li>
-    <li>把前三步做成工具：上传产品和品牌资料 → 自动拆解 TikTok 爆款（开头 / 中段 / 结尾）→ 生成脚本</li>
-    <li>拉片标准写进提示词，团队的经验变成所有人共用的规则</li>
-    <li>用几个真实品牌跑了多轮；交付使用说明和更新日志；正在和技术团队做服务器部署和自动更新</li>
-  </ul>
+  <h2>产品展示</h2>
+  <p>有界面的工具。<a href="https://chechechat.github.io/workbench-demo/" target="_blank" rel="noopener">在线演示版 ↗</a>（示例数据，不调用模型；访问密码请私信）。线框是结构，真截图和录屏在下面。</p>
+  <div class="proto">
+    <div class="wire" style="grid-column: 1 / -1; padding: 0; overflow: hidden">
+      <div class="cap" style="left:12px">工作台 · 页面结构</div>
+      <div style="display:grid;grid-template-columns:150px 1fr;min-height:300px">
+        <div style="border-right:1px solid var(--line);padding:14px 10px;background:var(--bg-soft)">
+          <div class="hd" style="font-size:11.5px">▣ 内容工作台</div>
+          <div class="ic">⌂ 工作台（所有项目）</div>
+          <div class="grp" style="font-size:11px">当前项目 ▾ <span class="note">1</span></div>
+          <div class="ic" style="margin-top:8px;color:var(--fg-strong);font-weight:600">输入</div><div class="ic">▸ Brief</div>
+          <div class="ic" style="margin-top:6px;color:var(--fg-strong);font-weight:600">拆解</div><div class="ic">▸ 产品拆解 · 6 模块</div><div class="ic">▸ 竞品拉片 · 3 条</div>
+          <div class="ic" style="margin-top:6px;color:var(--fg-strong);font-weight:600">生成</div><div class="ic" style="color:var(--accent);font-weight:600">▸ 脚本生成 · 9 条</div>
+          <div class="ic" style="margin-top:6px;color:var(--fg-strong);font-weight:600">沉淀</div><div class="ic">▸ 脚本库</div><div class="ic">▸ 钩子 / 话术库</div>
+          <div class="ic" style="margin-top:6px;color:var(--fg-strong);font-weight:600">数据</div><div class="ic">▸ 投放追踪 · 规划中</div>
+          <div class="ic" style="margin-top:14px;border-top:1px solid var(--line);padding-top:8px">本月已用 1,240 / 5,000 点 <span class="note">2</span></div>
+        </div>
+        <div style="padding:14px">
+          <div class="hd">③ 脚本生成</div>
+          <div class="ic">人群：<b>通勤上班族</b> · 结构：问题–方案 · 钩子：错误示范 · 时长 30s · 语言 越南语 · 数量 3 &nbsp; <span style="border:1px solid var(--accent);color:var(--accent);border-radius:6px;padding:1px 8px">生成 3 条</span> <span class="note">3</span></div>
+          <div class="grp">👤 通勤上班族（3）</div>
+          <div class="item"><div class="th">开头：「每天停在太阳下的车……」 · 错误示范 · 问题–方案 <span class="note">4</span></div><div class="zh">A 前 3 秒 · B 中段卖点 · C 结尾引导 &nbsp; <span style="color:var(--build)">已采用</span></div></div>
+          <div class="item"><div class="bar w80"></div><div class="bar w60"></div></div>
+          <div class="item"><div class="bar w80"></div><div class="bar w40"></div></div>
+          <div class="grp">👤 带娃妈妈（3）</div>
+          <div class="item"><div class="bar w80"></div><div class="bar w60"></div></div>
+          <div class="btns" style="max-width:360px"><span>☑ 勾选</span><span>复制全文</span><span>裂变前 3 秒</span><span>导出拍摄表 <span class="note">5</span></span></div>
+          <div class="ic" style="margin-top:10px">顶部进度：输入 ✓ → 分析 ✓ → 脚本 ● 生成中 · 已用 2 分 10 秒 <span class="note">6</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="proto-notes"><span class="note">1</span>一个产品一个项目，多人共用同一份 <span class="note">2</span>每次调用的 token 都记着 <span class="note">3</span>按 人群 × 结构 × 视频类型 成批出，可以一批接一批 <span class="note">4</span>每条脚本 A / B / C 三段，口播和画面分开写 <span class="note">5</span>勾选的导出 Excel：口播、画面分列，留拍摄人、日期、状态 <span class="note">6</span>生成在后台跑，关网页不中断</p>
+  <figure class="shot"><div class="ph"></div><figcaption class="placeholder">[待放] 45 秒录屏：上传资料 → 产品分析 → 脚本 → 导出拍摄表</figcaption></figure>
+  <figure class="shot"><div class="ph"></div><figcaption class="placeholder">[待放] 爆款拉片页截图：逐段拉片表（时间 · ABC · 画面怎么拍 · 说了什么）</figcaption></figure>
 
-  <h2>产出</h2>
-  <div class="gallery"><div class="ph"></div><div class="ph"></div></div>
-  <p class="placeholder">[待放：工作台界面截图 2 张（脱敏）、45 秒录屏]</p>
+  <details class="fold">
+    <summary>怎么跑的（给想看细节的人）</summary>
+    <div class="sop">
+      <div class="st">
+        <div class="n">0</div>
+        <div class="body">
+          <div class="head"><span class="t">先把 SOP 梳理出来</span><span class="who human">人</span></div>
+          <div class="io"><span>进</span><em>团队的流程导图、拍摄方案、跟岗观察</em><span>做</span><em>梳理成 8 阶段：产品与人群研究 → 卖点痛点拆解 → 爆款拉片 → 脚本 → 分镜拍摄 → 剪辑 → 投放 → 复盘；量每步耗时</em><span>出</span><em>工具只做前三步，后面的人做</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">1</div>
+        <div class="body">
+          <div class="head"><span class="t">Brief 输入</span><span class="who mixed">人 + 自动</span></div>
+          <div class="io"><span>进</span><em>品牌 brief、产品手册、平台数据截图（PDF / Word / Excel / 图片）</em><span>做</span><em>传完马上读，扫描版和截图用视觉模型读文字和表格；传齐点「开始生成」</em><span>出</span><em>结构化的产品信息</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">2</div>
+        <div class="body">
+          <div class="head"><span class="t">A 产品分析</span><span class="who auto">自动</span></div>
+          <div class="io"><span>进</span><em>Brief</em><span>做</span><em>按团队导图口径出：用户画像、卖点库、痛点库、场景库、核心价值观；提炼 2～4 个目标人群</em><span>出</span><em>人群 × 痛点 × 卖点 匹配表 —— <b>人可以改</b></em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">3</div>
+        <div class="body">
+          <div class="head"><span class="t">B 爆款拉片</span><span class="who auto">自动</span></div>
+          <div class="io"><span>进</span><em>上传的爆款视频或贴的文案</em><span>做</span><em>本地抽帧 + 语音转文字 + 模型看画面，越南语自动翻中文；每条拆成 结构 / 前 3 秒钩子 / 卖点句 / 结尾引导 + 逐段拉片表；汇总高频钩子、卖点句、关键词</em><span>出</span><em>话术库、钩子库</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">4</div>
+        <div class="body">
+          <div class="head"><span class="t">脚本生成</span><span class="who auto">自动</span></div>
+          <div class="io"><span>进</span><em>匹配表 + 话术库 + 禁用词</em><span>做</span><em>按 人群 × 结构模板 × 视频类型 成批出，每条 A / B / C 三段，口播和拍法分开；「裂变前 3 秒」给 5 个新开头。输出限定在团队标准里：钩子 14 类、结构 6 种、卖点 8 类</em><span>出</span><em>每人群 3～5 条脚本</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">5</div>
+        <div class="body">
+          <div class="head"><span class="t">审、采用、导出</span><span class="who human">人</span></div>
+          <div class="io"><span>进</span><em>一批脚本</em><span>做</span><em>编辑 / 采用 / 淘汰；勾选导出拍摄表 Excel 给编导。AI 原稿和人改后的差异记下来，用来优化提示词</em><span>出</span><em>脚本库 → 编导拍摄</em></div>
+        </div>
+      </div>
+      <div class="st">
+        <div class="n">6</div>
+        <div class="body">
+          <div class="head"><span class="t">投放数据回流</span><span class="who auto">V2 · 规划中</span></div>
+          <div class="io"><span>进</span><em>完播 / CTR / CVR / 单量</em><span>做</span><em>给脚本库打标，达标的钩子升级到跨项目通用库</em><span>出</span><em>投放结果反过来喂脚本生成</em></div>
+        </div>
+      </div>
+    </div>
+    <p class="flow-note">接公司的模型网关，换模型只改一行配置；试用期跑在我电脑上开公网临时链接，正式用要上服务器——技术团队在做。</p>
 
-  <h2>谁在用</h2>
-  <p>越南短视频团队试用中。</p>
+    <h2>人和系统各做什么</h2>
+    <div class="lanes">
+      <div class="auto"><div class="k">系统自动</div><ul><li>读资料、拆解、拉片、归类、生成、裂变、翻译</li><li>任务排队、后台跑、进度显示</li><li>记 token 用量</li></ul></div>
+      <div class="human"><div class="k">人做判断</div><ul><li>改匹配表、审脚本、采用 / 淘汰</li><li>升级钩子到通用库</li><li>资料里没写的信息模型偶尔会硬凑，A 出来后要人看一遍</li></ul></div>
+    </div>
 
-  <h2>结果</h2>
-  <p class="num">产品拆解到第一版脚本：2～3 人 3 天 → 1 人一个下午</p>
-
-  <h2>下一步</h2>
-  <p>接后五步的数据回传，让投放结果反过来喂脚本生成。</p>
+    <h2>关键决定</h2>
+    <ul>
+      <li><b>先梳 SOP 再做工具</b>：8 阶段先画出来、量耗时，工具只做最耗人的前三步</li>
+      <li><b>输出限定在团队标准枚举里</b>：钩子 14 类、结构 6 种、卖点 8 类，不让模型自由发挥，团队的经验变成所有人共用的规则</li>
+      <li><b>生成在后台跑</b>：关掉网页、刷新都不中断，顶部显示到哪一步</li>
+      <li><b>演示版和真实版分开</b>：公开演示版用示例数据不调模型，给外部看；真实版要密码，只在办公室网络开</li>
+    </ul>
+  </details>
 </article>
 </body>
 </html>
