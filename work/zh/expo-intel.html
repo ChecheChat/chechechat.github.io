@@ -10,21 +10,94 @@
 <article class="detail">
   <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
   <h1>展会情报助手</h1>
-  <div class="meta"><span>2026.10</span><span class="chip build">做成工具</span><span>给：全公司</span></div>
-  <div class="cover"></div>
+  <div class="meta"><span>2026.10 — 至今</span><span class="chip build">做成工具</span><span>给：电商商务团队（BD）</span></div>
+  <p>每天 7:00 上网搜越南、泰国、马来西亚、日本和中国国内的电商平台活动和行业展会，官网核实后写进多维表格；9:30 把「展会日报」私聊推给订阅的同事。没有界面：表格是主体，机器人只做提醒。</p>
 
-  <h2>问题</h2>
-  <p>东南亚的电商展、美妆展散在各处，业务要自己翻，漏掉就错过。</p>
+  <div class="facts">
+    <div><div class="k">谁在用</div><div class="v">商务团队，订阅制私聊</div></div>
+    <div><div class="k">上线</div><div class="v">2026-10-02 · v1.0 → v1.4</div></div>
+    <div><div class="k">沉淀</div><div class="v">约 140 场活动，四国 + 国内</div></div>
+  </div>
 
-  <h2>做了什么</h2>
-  <p>每周一、四自动搜集东南亚展会，整理成日报推到 Lark：新增活动、两周内开幕、报名即将截止。v1.0 → v1.4，覆盖 85 场。</p>
+  <h2>痛点</h2>
+  <p>公司对接品牌方和达人，拓客最有效的场合是大型展会和平台卖家大会——品牌、平台、渠道都在那儿。但活动分散在四个国家加国内，日期散落在各家官网，没有人每天盯，经常知道的时候报名已经截止。</p>
 
-  <h2>产出</h2>
-  <div class="gallery"><div class="ph"></div><div class="ph"></div></div>
-  <p class="placeholder">[待放]</p>
+  <h2>它怎么跑（SOP）</h2>
+  <div class="sop">
+    <div class="st">
+      <div class="n">1</div>
+      <div class="body">
+        <div class="head"><span class="t">查重</span><span class="who auto">自动 · 7:00</span></div>
+        <div class="io"><span>进</span><em>多维表格里已有的活动</em><span>做</span><em>先看表里已经有哪些，避免重复搜、重复写</em><span>出</span><em>已有活动清单</em></div>
+      </div>
+    </div>
+    <div class="st">
+      <div class="n">2</div>
+      <div class="body">
+        <div class="head"><span class="t">搜集</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>8 个方向：平台活动、曼谷、越南、马来西亚、泰国其他城市、东南亚其他、日本、国内</em><span>做</span><em>用当地语言 + 中英文搜未来 15 个月，每次不少于 30 次搜索；按优先级：平台卖家大会 → 越泰马大型行业展 → 日本 → 国内</em><span>出</span><em>候选活动</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 搜集范围表（8 个方向 × 品类）</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">3</div>
+      <div class="body">
+        <div class="head"><span class="t">核实</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>候选活动</em><span>做</span><em>日期和场馆到<b>官网核实，不编造</b>；只在聚合网站看到的标「待官方确认」；日期还没公布的不进表，记到待确认清单，每次回查</em><span>出</span><em>核实过的活动</em></div>
+      </div>
+    </div>
+    <div class="st">
+      <div class="n">4</div>
+      <div class="body">
+        <div class="head"><span class="t">入表</span><span class="who auto">自动</span></div>
+        <div class="io"><span>进</span><em>核实过的活动</em><span>做</span><em>按「活动名称 + 开始日期」去重写入；13 列：名称、品类、日期、地点、类型、报名链接、截止、状态、区域、月份……不覆盖同事标的状态</em><span>出</span><em>多维表格「东南亚展会情报」：全部 / 🌏 东南亚 / 🇨🇳 国内 / 🇯🇵 日本 四个视图，按月分组</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 多维表格（脱敏）</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">5</div>
+      <div class="body">
+        <div class="head"><span class="t">推送</span><span class="who auto">自动 · 9:30</span></div>
+        <div class="io"><span>进</span><em>上次推送之后新收录的活动</em><span>做</span><em>拼一张卡片：🆕 新增几场、各板块分布和品类、⏰ 7 天内截止、✅ 已报名的撞期红字提醒；底部三个按钮直达视图。私聊「订阅人」表里的每个人。<b>没新增、没截止的日子不推</b></em><span>出</span><em>展会日报卡片</em></div>
+      </div>
+      <figure class="shot-s"><div class="ph"></div><figcaption class="placeholder">[待放] 日报卡片（脱敏）</figcaption></figure>
+    </div>
+    <div class="st">
+      <div class="n">6</div>
+      <div class="body">
+        <div class="head"><span class="t">用</span><span class="who human">人</span></div>
+        <div class="io"><span>进</span><em>早上的日报</em><span>做</span><em>BD 刷一眼 → 看到合适的点进表格 → 点报名链接 → 回表把状态改成「已报名」或「不考虑」。想收日报：在「订阅人」表加一行选自己</em><span>出</span><em>报名记录，带回品牌直客和渠道线索</em></div>
+      </div>
+    </div>
+  </div>
+  <p class="flow-note">搜集和推送都在云端（定时任务 + 私有仓库），电脑关机照常。</p>
 
-  <h2>结果</h2>
-  <p class="num">全公司订阅 · 85 场</p>
+  <h2>人和系统各做什么</h2>
+  <div class="lanes">
+    <div class="auto"><div class="k">系统自动</div><ul><li>每天搜、核实、去重、写表</li><li>9:30 推日报，撞期提醒</li><li>日期没公布的记着，定期回查</li></ul></div>
+    <div class="human"><div class="k">人做判断</div><ul><li>BD 决定去不去，报名后改状态</li><li>平台官方卖家大会只发邀请不公开日期，靠对接人补进表</li><li>我按反馈改搜集范围和卡片</li></ul></div>
+  </div>
+
+  <h2>关键决定</h2>
+  <ul>
+    <li><b>越简单越好</b>：表格从 30 列精简到 10 列，去掉评分、等级、决策看板、负责人——一眼能看完</li>
+    <li><b>表格是主体，机器人只提醒</b>：活动多了以后卡片太长，改成只写各板块新增几场，详情进表格看</li>
+    <li><b>订阅制</b>：放弃「拉机器人进群」，在表里加名字就能收；可用范围开放给全员，以后不用再走审批</li>
+    <li><b>不信免费定时</b>：GitHub 自带定时会拖几个小时，主力改用 cron-job.org 准时触发，GitHub 只兜底，且只在白天推</li>
+    <li><b>不编造</b>：日期未经官网核实的不进表</li>
+  </ul>
+
+  <h2>怎么迭代的</h2>
+  <ul>
+    <li>v1.0（10-02）：表格 + 首批 41 场 + 每日卡片，部署云端</li>
+    <li>v1.1（10-03）：每周自动搜集；订阅制私聊；开放全员</li>
+    <li>v1.2（10-05）：推送时间不准（有天拖到下午两点），改 cron-job.org 准时 9:30</li>
+    <li>v1.3（10-07）：覆盖公司所在四国 + 国内单独板块 + 日本单独板块；加品类和月份；日报精简成只报数量</li>
+    <li>v1.4（10-12）：搜集也搬到云端，每天 7:00；推送记录防重复；搜完晚于 9:30 自动补推</li>
+  </ul>
+
+  <h2>下一步</h2>
+  <p>把订阅名单扩到整个商务团队；展后线索回收——参展带回的品牌线索记下来，和 BD 业绩挂钩。</p>
 </article>
 </body>
 </html>
