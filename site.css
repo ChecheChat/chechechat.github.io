@@ -301,3 +301,21 @@ footer { color: var(--muted); font-size: 13px; margin-top: 60px; }
 .jud { list-style: none; padding: 0; margin: 12px 0 0; }
 .jud li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg-soft); margin-bottom: 8px; font-size: 14.5px; color: var(--muted); }
 .jud li b { color: var(--fg-strong); font-weight: 600; }
+
+/* project cards: three-column thumbnail grid, one number + one status per card; details live on the project page */
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 2px -8px 0; }
+@media (max-width: 560px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+.card { display: block; padding: 8px; border-radius: 10px; color: inherit; transition: background .2s ease; min-width: 0; }
+a.card:hover { background: var(--bg-soft); }
+.card .thumb { aspect-ratio: 16/10; border-radius: 6px; background: var(--bg-soft); border: 1px solid var(--line); overflow: hidden; }
+.card .thumb img, .card .thumb video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card .t { color: var(--fg-strong); font-weight: 600; font-size: 14px; line-height: 1.35; margin-top: 10px; }
+.card .t .arrow { display: inline-block; transition: transform .2s ease; }
+a.card:hover .t .arrow { transform: translate(3px, -3px); }
+.card .n { color: var(--muted); font-size: 12.5px; line-height: 1.45; margin-top: 4px; }
+.card .st { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 11.5px; color: var(--muted); }
+.card .st .chip { font-size: 11px; padding: 3px 8px; }
+.chip.live { background: var(--build-bg); color: var(--build); }
+.chip.soon { background: var(--make-bg); color: var(--make); }
+.group + .cards { margin-top: 6px; }
+.cards + .group { margin-top: 44px; }
