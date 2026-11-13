@@ -61,6 +61,17 @@ section h2 { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; 
 @media (max-width: 960px) {
   section h2 { position: sticky; top: 0; background: var(--bg); padding: 16px 0; z-index: 2; }
 }
+
+/* homepage section titles: Chinese has no uppercase, so the 12px label reads smaller than body text; use size + a top rule instead */
+.main > section { margin-bottom: 96px; }
+.main > section > h2 { font-size: 22px; letter-spacing: -.01em; text-transform: none; color: var(--fg-strong); margin: 0 0 28px; padding-top: 28px; border-top: 1px solid var(--line); font-weight: 700; line-height: 1.2; }
+.main > section:first-child > h2 { border-top: 0; padding-top: 0; }
+@media (max-width: 960px) {
+  .main > section > h2 { position: sticky; top: 0; background: var(--bg); padding: 16px 0 12px; margin-bottom: 20px; border-top: 0; font-size: 20px; }
+}
+/* titled blocks inside a section (作品墙、认证与邀请): one level under h2, above card titles */
+div.row[style] > .title { font-size: 15px; color: var(--fg); font-weight: 600; }
+
 .prose p { color: var(--muted); margin: 0 0 18px; }
 .prose b { color: var(--fg-strong); font-weight: 600; }
 
