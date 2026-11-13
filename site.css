@@ -296,3 +296,8 @@ footer { color: var(--muted); font-size: 13px; margin-top: 60px; }
 .fold[open] summary::after { transform: rotate(180deg); }
 .fold summary:hover { color: var(--fg-strong); }
 .fold h2:first-of-type { margin-top: 12px; }
+
+/* judgments list */
+.jud { list-style: none; padding: 0; margin: 12px 0 0; }
+.jud li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg-soft); margin-bottom: 8px; font-size: 14.5px; color: var(--muted); }
+.jud li b { color: var(--fg-strong); font-weight: 600; }
