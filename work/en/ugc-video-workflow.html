@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-border UGC Short Video Workflow · Hangyi Che</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../index.html#projects">← Hangyi Che / Projects</a>
+  <h1>Cross-border UGC Short Video Workflow</h1>
+  <div class="meta"><span>2026.06</span><span class="chip make">Build</span><span class="chip explain">Explain</span><span>Yuanji AI · Public template</span></div>
+
+  <div class="vhero">
+    <video src="../../assets/work/ugc/sample.mp4" poster="../../assets/work/ugc/poster.jpg" muted loop playsinline autoplay controls></video>
+    <div class="side">
+      <div class="k">Input</div>
+      <div class="in"><span>Product photos × 2</span><span>Model photo × 1</span><span>Product info: name, selling points, packaging details, target audience</span></div>
+      <p style="margin-top:14px"><b style="color:var(--fg)">Output</b>: one 8-second vertical UGC short video with voiceover, subtitles, cover title and tags. The finished video is on the left.</p>
+    </div>
+  </div>
+
+  <p>Built for cross-border sellers. The pain: making one UGC short video for one product means writing the idea, the storyboard and the copy, then generating, and starting over every time. As a template, you swap the product and the model, the flow stays the same, and the video comes out. Public template on Yuanji AI, with a tutorial video.</p>
+
+  <h2>How it works</h2>
+  <div class="mm">
+    <div class="root"><div class="t">Six Agents chained in one line</div><div class="ba"><span><b>Before</b>One prompt, ask for the video directly</span><span><b>After</b>Break the flow down first, one Agent per step, each step's output is the next step's input</span></div></div>
+    <div class="branches">
+      <div class="br">
+        <div class="h"><span class="n">00</span>Product analysis<span class="who auto">Agent</span></div>
+        <ul>
+          <li>Reads the images and text, lists category, packaging details and appearance, summarizes the core selling points</li>
+          <li>Three constraints: only from the uploaded material, packaging details written specifically, selling points not exaggerated</li>
+        </ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">01</span>Creative strategy<span class="who auto">Agent</span></div>
+        <ul><li>Decides which UGC scene fits this product, sets the target audience and the mood</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">02</span>Visual style<span class="who auto">Agent</span></div>
+        <ul><li>Image texture, color tone, how the person looks, how the product appears; outputs a structured description</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">03</span>Storyboard script<span class="who auto">Agent</span></div>
+        <ul><li>Written second by second: shot, the person's action, when the product enters the frame, sound effects</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">04</span>Voiceover, subtitles, tags<span class="who auto">Agent</span></div>
+        <ul><li>Writes voiceover and subtitles against the timeline, gives three cover titles and ten tags</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">05</span>Generate video<span class="who mixed">Model + Human</span></div>
+        <ul><li>All previous outputs are combined into a prompt and the video is generated; a person checks the result and goes back to fix the Agent if it is wrong</li></ul>
+      </div>
+    </div>
+  </div>
+
+
+  <h2>Tuned, not written</h2>
+  <p>When the video has a problem, go back to the matching node, add one constraint, run again.</p>
+  <div class="probs">
+    <div class="p"><img src="../../assets/work/ugc/p1-toilet.jpg" alt=""><div class="b"><span class="no">Problem 01</span><span class="q">The scene ended up in a toilet, food next to a bathroom</span><span class="to">→ Fix 01 Creative strategy</span><span class="fx">Added: food products must not appear in bathrooms or similar scenes; the scene must not conflict with "eating"</span></div></div>
+    <div class="p"><img src="../../assets/work/ugc/p2-package.jpg" alt=""><div class="b"><span class="no">Problem 02</span><span class="q">Tearing the package looked wrong, the way it opened did not match the real thing</span><span class="to">→ Fix 00 Product analysis + 03 Storyboard</span><span class="fx">Packaging details now specify where the opening is; the opening action is one motion, not broken into steps</span></div></div>
+    <div class="p"><img src="../../assets/work/ugc/p3-phone.jpg" alt=""><div class="b"><span class="no">Problem 03</span><span class="q">The phone screen was warped, text turned into a blur</span><span class="to">→ Fix 02 Visual style</span><span class="fx">The screen only shows a blurred feed and red dots, no readable text required</span></div></div>
+    <div class="p"><img src="../../assets/work/ugc/p4-handoff.jpg" alt=""><div class="b"><span class="no">Problem 04</span><span class="q">The ending had her handing a bitten protein bar to a colleague, which made no sense</span><span class="to">→ Fix 03 Storyboard</span><span class="fx">The closing action is limited to the lead herself, no second person</span></div></div>
+  </div>
+
+  <figure class="shot" style="margin-top:28px"><img src="../../assets/work/ugc/canvas.jpg" alt="Yuanji canvas: user input, six nodes, video output"><figcaption class="placeholder" style="font-style:normal">Full Yuanji canvas: user input on the left, prompts for the four nodes in the middle, finished video on the right</figcaption></figure>
+
+  <h2>Reach</h2>
+  <div class="facts">
+    <div><span class="k" style="display:block">Tutorial video</span><span class="v" style="display:block">Douyin · 6 min 28 s</span><p style="margin:6px 0 0;font-size:13px">4,800+ views · 60 saves · <a class="vid" href="https://www.douyin.com/video/7652987260652064042" target="_blank" rel="noopener">Watch ↗</a></p></div>
+    <div><span class="k" style="display:block">Template</span><span class="v" style="display:block">Public on Yuanji AI</span><p style="margin:6px 0 0;font-size:13px">Upload your own product and model photos and it runs</p></div>
+    <div><span class="k" style="display:block">In one line</span><span class="v" style="display:block">Break the flow down clearly, and you get a reusable workflow</span><p style="margin:6px 0 0;font-size:13px">The person breaks down the flow and sets the constraints, AI runs each step</p></div>
+  </div>
+
+  <h2>Tools</h2>
+  <p>Yuanji AI Zaojing canvas · Multi-Agent nodes · Image-to-video</p>
+</article>
+</body>
+</html>

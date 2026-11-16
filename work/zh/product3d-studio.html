@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商品 3D 工作台 · 车杭忆</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
+  <h1>商品 3D 工作台</h1>
+  <div class="meta"><span>2026.11</span><span class="chip make">做出来</span><span>群核科技 Aholo 全球 3D AI 黑客松 · 参赛作品</span></div>
+
+  <figure class="shot"><img src="../../assets/work/product3d/room.jpg" alt="商品详情页：3D 模型、换色、三视图、转盘视频、AR"><figcaption class="placeholder" style="font-style:normal">商品详情页：左边可旋转的 3D 模型，右边一键换色和原始输入图</figcaption></figure>
+
+  <p>给电商商家用。痛点：上架一个商品要建模、进棚拍多角度、做视频，小商家做不起。这个工具一张商品图进，3D 模型、多角度图、转盘视频、换色款、AR 预览一次出齐，直接上架。3D 由群核 Aholo Lux3D 图生 3D 生成，我做的是商家能直接用的工作台。<a href="https://product3d-studio.vercel.app" target="_blank" rel="noopener">线上地址 ↗</a> · <a href="https://github.com/ChecheChat/product3d-studio" target="_blank" rel="noopener">GitHub ↗</a></p>
+
+  <h2>怎么实现</h2>
+  <div class="mm">
+    <div class="root"><div class="t">一张商品图，一套电商素材</div><div class="ba"><span><b>Before</b>建模排期、进棚拍多角度图、寄样前对方看不到实物</span><span><b>After</b>传图，约 5 分钟出 3D，其余素材浏览器里一键出</span></div></div>
+    <div class="branches">
+      <div class="br">
+        <div class="h"><span class="n">01</span>上传与生成<span class="who auto">Lux3D 图生 3D</span></div>
+        <ul>
+          <li>传 1 到 8 张，同一商品多角度更准；前端先压缩再上传</li>
+          <li>两档：快速预览约 1.5 分钟只看外形，高质量约 5 分钟图案文字清晰</li>
+        </ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">02</span>多角度图与转盘视频<span class="who auto">浏览器端</span></div>
+        <ul>
+          <li>正交相机对准模型包围盒，渲染正、右、俯、后、左、3/4 六个视角，拼成带标签的合成图</li>
+          <li>转盘视频在浏览器里直接录，6 秒一圈，不走服务器</li>
+        </ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">03</span>一键换色<span class="who auto">Lux3D 材质重绘</span></div>
+        <ul><li>选预设或写一句，先生成配色参考图，再对同一个模型重绘材质；也可直接传参考图</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">04</span>AR 与分享<span class="who mixed">导出 + 人</span></div>
+        <ul>
+          <li>AR 预览：每个模型和配色自动导出 USDZ，手机上按真实尺寸放进房间看效果，适合插画、装饰品、家居这类要看摆放效果的商品；iPhone 走 AR Quick Look，安卓走 Scene Viewer，电脑出二维码</li>
+          <li>分享页泰中双语、只读，达人和客户不用登录就能转着看、下转盘视频、下多角度图；寄样前先看，实物照寄</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2>实测出来的判断</h2>
+  <p>做之前先拿官方示例、马克杯、游戏鼠标各跑了几轮，记时间和效果，产品上的几个决定都来自这张表。</p>
+  <div class="lessons">
+    <div><div><span class="k">实测</span><span class="bad">同一只马克杯：单图出来波浪纹糊成乱线，五张多角度图进去背面图案位置才对</span></div><div><span class="k">于是</span><span class="fix">上传框提示「同一商品多拍几个角度」，默认鼓励多图</span></div></div>
+    <div><div><span class="k">实测</span><span class="bad">高质量档比快速档慢四倍、积分贵二十倍，但釉面光泽和花纹明显最好</span></div><div><span class="k">于是</span><span class="fix">两档都留，默认高质量；快速档标明「只看外形」，给先看个大概的人</span></div></div>
+    <div><div><span class="k">实测</span><span class="bad">游戏鼠标五图生成后正面朝向反了 180°</span></div><div><span class="k">于是</span><span class="fix">详情页加「校正正面」按钮，转盘和多角度图都按校正后的朝向出</span></div></div>
+    <div><div><span class="k">实测</span><span class="bad">官方产物链接只有两小时有效</span></div><div><span class="k">于是</span><span class="fix">任务成功立刻下载转存到自己的存储，分享页永远能打开</span></div></div>
+  </div>
+
+  <h2>长什么样</h2>
+  <div class="gallery">
+    <div><img src="../../assets/work/product3d/home.jpg" alt="工作台首页" style="width:100%;border-radius:8px;border:1px solid var(--line)"><p style="font-size:12.5px;margin:6px 0 0">工作台：传图、选档位，下面是我的商品</p></div>
+    <div><img src="../../assets/work/product3d/share.jpg" alt="分享页" style="width:100%;border-radius:8px;border:1px solid var(--line)"><p style="font-size:12.5px;margin:6px 0 0">分享页：泰中双语，寄样前先发给海外达人看</p></div>
+  </div>
+
+  <h2>工具</h2>
+  <p>Aholo Lux3D API · Next.js · Three.js · Vercel Blob · Claude Code 编写</p>
+</article>
+</body>
+</html>

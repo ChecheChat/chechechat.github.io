@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creator CRM · Hangyi Che</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../index.html#projects">← Hangyi Che / Projects</a>
+  <h1>Creator CRM</h1>
+  <div class="meta"><span>2026.10 — present</span><span class="chip build">Build</span><span class="chip explain">Explain</span><span>For: the Thai BD team + Chinese management</span></div>
+  <p>Built for the Thai BD team and Chinese management. The pain: the Thai team finds creators, sends them brand info and collects their submissions in Google Drive; Chinese management and Chinese brands work in Lark. The two sides don't line up, and management can't see the BD team's outreach status. I built an automatic sync: the Thai team keeps using Google, and a creator master table and dashboard grow in Lark on their own.</p>
+
+  <h2>How it works</h2>
+  <div class="mm">
+    <div class="root"><div class="t">Thailand works in Google, China reads in Lark</div><div class="ba"><span><b>Before</b>Dozens of project sheets scattered in Google; management can't see them</span><span><b>After</b>Auto-synced to Lark, one creator per row, the whole picture on a dashboard</span></div></div>
+    <div class="branches">
+      <div class="br"><div class="h"><span class="n">01</span>Thai team works as usual<span class="who human">👤 Human</span></div><ul><li>Creator info, brand project sheets and creator submissions all stay in Google Drive; no habits change</li></ul></div>
+      <div class="br"><div class="h"><span class="n">02</span>Auto-sync to Lark<span class="who auto">🤖 AI</span></div><ul><li>Folders, sheets, tabs and fields are copied over as-is, nothing added or removed, updated on a schedule; the original sheets are mirrored for reference</li></ul></div>
+      <div class="br"><div class="h"><span class="n">03</span>Build the creator master table<span class="who auto">🤖 AI</span></div><ul><li>Three linked tables: projects, creator master, project rosters. One creator per row; find people by category and size; collaboration count, scoring and blacklist at a glance; the follow-up stage is set automatically from what's filled in, no manual entry</li></ul></div>
+      <div class="br"><div class="h"><span class="n">04</span>Management reads the dashboard<span class="who human">👤 Human</span></div><ul><li>Each BD's outreach funnel, effective outreach rate, successful collaborations, average score; before a creator is proposed, an automatic reminder of past collaborations and blacklist status</li></ul></div>
+    </div>
+  </div>
+
+  <h2>What it looks like</h2>
+  <p>Everything lives in a Lark Base: three linked tables plus a dashboard for management.</p>
+  <div class="proto">
+    <div class="wire" style="grid-column: 1 / -1">
+      <div class="cap">Base "Thai BD creator master table"</div>
+      <div class="tabs"><span class="on">All creators</span><span>👤 Mine</span><span>✅ Worked with</span><span>⭐ Frequent</span><span>⛔ Blacklist</span></div>
+      <table>
+        <tr><th>Creator</th><th>Main category</th><th>Size</th><th>Followers</th><th>Collabs</th><th>Avg score</th><th>Follow-up stage</th><th>⚠️ Duplicate</th></tr>
+        <tr><td colspan="8" class="grow">💄 Beauty & skincare › 🌳 Top-tier 500K+</td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌳</td><td>820K</td><td>3</td><td>★ 4.5</td><td>④ Collaborated</td><td></td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌳</td><td>610K</td><td>1</td><td>★ 4.0</td><td>④ Collaborated</td><td></td></tr>
+        <tr><td colspan="8" class="grow">💄 Beauty & skincare › 🌿 Mid-tier 50–500K</td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌿</td><td>120K</td><td>0</td><td>—</td><td>③ Quote received</td><td></td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌿</td><td>86K</td><td>0</td><td>—</td><td>① No effective outreach</td><td>ซ้ำ / Duplicate</td></tr>
+        <tr><td colspan="8" class="grow">🍜 Food › 🌱 KOC under 50K</td></tr>
+        <tr><td><div class="bar"></div></td><td>🍜</td><td>🌱</td><td>32K</td><td>2</td><td>★ 4.8</td><td>④ Collaborated</td><td></td></tr>
+      </table>
+      <p class="ic" style="margin:8px 0 0">Three linked tables: <b>Projects</b> (one brand project per row, by quarter → month) · <b>Creator master</b> (one creator per row) · <b>Project rosters</b> (one creator × one project: proposed / collaborated / scored). Add a row in a roster and the other two tables show it automatically.</p>
+    </div>
+    <div class="wire">
+      <div class="cap">Dashboard · for leadership</div>
+      <div class="grp">BD follow-up funnel</div>
+      <div class="ic">One bar per BD, stacked by ① No effective outreach / ② Effective outreach / ③ Quote received / ④ Collaborated</div>
+      <div style="display:flex;gap:14px;align-items:flex-end;height:90px;margin:10px 0 4px">
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div style="height:18%;background:var(--build)"></div><div style="height:20%;background:var(--accent)"></div><div style="height:12%;background:var(--explain)"></div><div style="height:50%;background:var(--line)"></div></div>
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:70%"><div style="height:22%;background:var(--build)"></div><div style="height:30%;background:var(--accent)"></div><div style="height:10%;background:var(--explain)"></div><div style="height:38%;background:var(--line)"></div></div>
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:30%"><div style="height:100%;background:var(--line)"></div></div>
+      </div>
+      <div class="ic">BD A · BD B · BD C</div>
+      <div class="grp" style="margin-top:10px">Four numbers per person</div>
+      <div class="ic">Effective outreach count · Effective outreach rate · Successful collaborations · Average collaboration score</div>
+    </div>
+    <div class="wire">
+      <div class="cap">Project roster · Scoring</div>
+      <div class="grp">📝 To score (collaborated, not yet scored)</div>
+      <div class="item"><div class="th">Creator × Project</div><div class="zh">⏰ On time ★★★★☆ &nbsp; 🎬 Content ★★★★★</div><div class="zh">📈 Data ★★★☆☆ &nbsp; 🤝 Cooperation ★★★★☆</div><div class="ic">One-line review: <span class="bar w60" style="display:inline-block;vertical-align:middle"></span></div></div>
+      <div class="item"><div class="th">Creator × Project</div><div class="zh">Past collaborations: ✅ Worked with 2 times</div></div>
+      <div class="item"><div class="th">Creator × Project</div><div class="zh">Past collaborations: ⛔ Blacklist</div></div>
+    </div>
+  </div>
+  <p class="proto-notes">The follow-up stage is set automatically from what's filled in, no manual entry; before a creator is proposed, an automatic reminder of past collaborations or blacklist status.</p>
+
+
+</article>
+</body>
+</html>

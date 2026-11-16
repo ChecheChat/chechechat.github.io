@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livestream Ops Digital Twin · Hangyi Che</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../index.html#projects">← Hangyi Che / Projects</a>
+  <h1>Livestream Ops Digital Twin</h1>
+  <div class="meta"><span>2026.11 — present</span><span class="chip build">Build</span><span>For: the head of livestream operations in Vietnam</span></div>
+  <p>Built for the Vietnam livestream operations team. The pain: ops writes a report every day, but the material is scattered across several livestream group chats, TikTok dashboard screenshots and spreadsheets. They had to dig through each one, add up sales by hand and check by hand what changed that day. Finding and counting took the most time. I built a digital twin: it reads the group chats and screenshots for them, the numbers are computed by code, there's a daily digest every evening and a weekly report every week, and the person only checks.</p>
+
+  <h2>How it works</h2>
+  <div class="mm">
+    <div class="root"><div class="t">Reads the groups, does the math, writes the summary</div><div class="ba"><span><b>Before</b>Dig through each group chat, count by hand, write the report</span><span><b>After</b>One card at 21:30, one conclusion per item</span></div></div>
+    <div class="branches">
+      <div class="br"><div class="h"><span class="n">01</span>Read group chats<span class="who auto">🤖 AI</span></div><ul><li>Reads the designated livestream group chats under the manager's authorization; no bot joins or posts, members notice nothing; reads text, rich posts and images</li></ul></div>
+      <div class="br"><div class="h"><span class="n">02</span>Read dashboard screenshots<span class="who auto">🤖 AI</span></div><ul><li>Reads GMV, units sold and views from TikTok LIVE dashboard screenshots; currency is taken as shown in the screenshot, flagged rather than guessed when unreadable; repeated screenshots of the same session count once</li></ul></div>
+      <div class="br"><div class="h"><span class="n">03</span>Daily summary<span class="who auto">🤖 AI</span></div><ul><li>One card at 21:30 every evening: sales overview, one block per brand, split into morning, afternoon and evening sessions; numbers computed by code, never estimated by the model; five fixed questions, one conclusion each, no timestamps or speaker names</li></ul></div>
+      <div class="br"><div class="h"><span class="n">04</span>Weekly report<span class="who auto">🤖 AI</span></div><ul><li>Every Saturday, the week by brand: sessions, GMV, units, one conclusion for the week</li></ul></div>
+      <div class="br"><div class="h"><span class="n">05</span>Check<span class="who human">👤 Human</span></div><ul><li>Sent only to the manager, who checks it before reporting up; content is read and sent from the cloud on the spot, not stored long-term</li></ul></div>
+    </div>
+  </div>
+
+  <h2>What it looks like</h2>
+  <p>One direct-message card, no interface.</p>
+  <div class="proto">
+    <div class="wire">
+      <div class="cap">Daily digest · 21:30 direct message</div>
+      <div class="hd">📊 Livestream daily digest · 11-13</div>
+      <div class="grp">Sales overview</div>
+      <div class="item"><div class="th" style="font-size:15px">฿ 128,400</div><div class="zh">GMV · 1,860 units sold · 6 sessions</div></div>
+      <div class="grp" style="border-left:4px solid var(--make);padding-left:8px">Brand A</div>
+      <div class="item"><div class="zh">Morning ฿ 21,000 · sold 310 · views 4.2K · ROI 2.1</div><div class="zh">Afternoon ฿ 35,000 · sold 480 · views 6.8K · ROI 2.6</div><div class="zh">Evening <b>฿ 52,000</b> · sold 790 · views 11K · ROI 3.0</div></div>
+      <div class="grp" style="border-left:4px solid var(--explain);padding-left:8px">Brand B</div>
+      <div class="item"><div class="bar w80"></div><div class="bar w60"></div></div>
+      <div class="grp">Five fixed questions</div>
+      <div class="item"><div class="zh">Start time: on schedule</div><div class="zh">Promotion changes: buy-one-get-one added to the evening session</div><div class="zh">Product links: main link swapped</div><div class="zh">Ad spend changes: none</div><div class="zh">Watch out: afternoon session had high views but low conversion</div></div>
+    </div>
+    <div class="wire">
+      <div class="cap">Saturday weekly report · by brand</div>
+      <div class="hd">📈 This week · Brand A</div>
+      <div class="item"><div class="zh">Sessions 18 · GMV ฿ 610K · Units 8.9K</div><div class="bar w80"></div><div class="bar w60"></div></div>
+      <div class="hd" style="margin-top:10px">📈 This week · Brand B</div>
+      <div class="item"><div class="bar w80"></div><div class="bar w40"></div></div>
+      <div class="ic" style="margin-top:10px">One-line conclusion for the week</div>
+      <div class="grp" style="margin-top:14px">What it reads</div>
+      <div class="item"><div class="zh">Text, rich posts and images in the group chats</div><div class="zh">TikTok LIVE dashboard screenshots → GMV, units sold, views, <b>in the currency shown in the screenshot</b></div></div>
+    </div>
+  </div>
+
+</article>
+</body>
+</html>

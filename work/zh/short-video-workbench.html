@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>短视频内容工作台 · 车杭忆</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
+  <h1>短视频内容工作台</h1>
+  <div class="meta"><span>2026.10 — 测试中</span><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span>给：越南短视频运营团队</span></div>
+  <p>给越南短视频运营团队用。痛点：一个新品出第一版脚本要几个人做几天，拉片标准在每个人脑子里。做成网页工具：资料传进去，AI 分析产品和爆款，批量出脚本，人审完导出。</p>
+
+  <div class="facts">
+    <div><span class="k" style="display:block">基线 → 目标</span><span class="v big" style="display:block">一周 → 三天 → 半天内</span><p style="margin:6px 0 0;font-size:12px">无 AI 一周，用通用 AI 三天；工作台目标半天内，试点计时中</p></div>
+    <div><span class="k" style="display:block">谁在用</span><span class="v" style="display:block">越南短视频运营，真实项目试点</span></div>
+    <div><span class="k" style="display:block">状态</span><span class="v" style="display:block">测试中 · v0.15</span></div>
+  </div>
+
+  <h2>怎么实现</h2>
+  <div class="mm">
+    <div class="root"><div class="t">三步：输入 → AI 分析 → 出脚本</div><div class="ba"><span><b>Before</b>几个人各凭经验，几天出第一版</span><span><b>After</b>传资料，串着跑，人只审和勾选</span></div></div>
+    <div class="branches">
+      <div class="br">
+        <div class="h"><span class="n">01</span>输入<span class="who human">人</span></div>
+        <ul><li>产品信息、品牌 brief、平台数据截图、几条爆款视频</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">02</span>AI 分析<span class="who auto">AI</span></div>
+        <ul>
+          <li><b>产品分析</b>：用户画像、卖点、痛点、场景 → 人群 × 痛点 × 卖点匹配表</li>
+          <li><b>爆款分析</b>：每条拆结构、钩子、卖点句、结尾；逐帧拉片表（时间 · 画面 · 口播）；多条汇总出高频钩子和卖点句</li>
+        </ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">03</span>出脚本<span class="who mixed">AI + 人</span></div>
+        <ul>
+          <li>按人群和结构批量生成，每条分前 3 秒、中段、结尾，口播和画面分开写；词只从团队自己的钩子库、话术库里取</li>
+          <li class="loop">人审、采用、导出拍摄表给编导；跑得好的做前 3 秒裂变，进脚本库</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2>长什么样</h2>
+  <p>三块，对应上面三步。</p>
+  <figure class="shot"><img src="../../assets/work/workbench/2a-product.jpg" alt="② A 产品分析"><figcaption class="placeholder" style="font-style:normal">产品分析：用户画像、卖点、痛点，按团队导图口径拆出来</figcaption></figure>
+  <figure class="shot"><img src="../../assets/work/workbench/shot-breakdown.jpg" alt="逐段拉片表"><figcaption class="placeholder" style="font-style:normal">爆款拉片：上面整条拆结构、钩子、卖点句、结尾，下面逐段拉片，时间、画面、口播一段一行</figcaption></figure>
+  <figure class="shot"><img src="../../assets/work/workbench/3-scripts.jpg" alt="③ 输出脚本"><figcaption class="placeholder" style="font-style:normal">输出脚本：按结构 × 人群出一批，开头、中段、结尾各带画面说明，勾选后导出拍摄表</figcaption></figure>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>达人 CRM · 车杭忆</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
+  <h1>达人 CRM</h1>
+  <div class="meta"><span>2026.10 — 至今</span><span class="chip build">做成工具</span><span class="chip explain">讲出来</span><span>给：泰国 BD 团队 + 中国管理层</span></div>
+  <p>给泰国 BD 团队和中国管理层用。痛点：泰国团队找达人、给达人发品牌信息、达人填报，习惯都在 Google Drive；中国管理层和中国品牌方习惯看 Lark，两边对不上，管理层看不到 BD 的建联状态。做了自动同步：泰国团队照常用 Google，Lark 里自动长出一张达人总表和仪表盘。</p>
+
+  <h2>怎么实现</h2>
+  <div class="mm">
+    <div class="root"><div class="t">泰国用 Google，中国看 Lark</div><div class="ba"><span><b>Before</b>几十张项目表散在 Google，管理层看不到</span><span><b>After</b>自动同步到 Lark，一个达人一行，仪表盘看全</span></div></div>
+    <div class="branches">
+      <div class="br"><div class="h"><span class="n">01</span>泰国团队照常工作<span class="who human">👤 人工</span></div><ul><li>达人信息、品牌项目表、达人填报，全部还在 Google Drive 里，不改任何习惯</li></ul></div>
+      <div class="br"><div class="h"><span class="n">02</span>自动同步到 Lark<span class="who auto">🤖 AI</span></div><ul><li>文件夹、表格、页签、字段原样搬过来，不增不减，定期更新；原表照搬一份用来查</li></ul></div>
+      <div class="br"><div class="h"><span class="n">03</span>合成达人总表<span class="who auto">🤖 AI</span></div><ul><li>三张关联表：项目表、达人总表、项目名单。一个达人一行，按品类和体量找人，合作次数、评分、黑名单一眼看到；跟进阶段按填的信息自动判断，不用手填</li></ul></div>
+      <div class="br"><div class="h"><span class="n">04</span>管理层看仪表盘<span class="who human">👤 人工</span></div><ul><li>每个 BD 的建联漏斗、有效建联率、合作成功数、平均评分；提报前自动提醒合作过几次、是不是黑名单</li></ul></div>
+    </div>
+  </div>
+
+  <h2>长什么样</h2>
+  <p>全部住在 Lark 多维表格里：三张互相关联的表，加一个给管理层看的仪表盘。</p>
+  <div class="proto">
+    <div class="wire" style="grid-column: 1 / -1">
+      <div class="cap">多维表格「泰国 BD 达人总表」</div>
+      <div class="tabs"><span class="on">全部达人</span><span>👤 我负责的</span><span>✅ 合作过</span><span>⭐ 高频合作</span><span>⛔ 黑名单</span></div>
+      <table>
+        <tr><th>达人</th><th>主品类</th><th>体量</th><th>粉丝</th><th>合作次数</th><th>平均评分</th><th>跟进阶段</th><th>⚠️ 重复</th></tr>
+        <tr><td colspan="8" class="grow">💄 美妆护肤 › 🌳 头部 50 万+</td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌳</td><td>820K</td><td>3</td><td>★ 4.5</td><td>④ 合作成功</td><td></td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌳</td><td>610K</td><td>1</td><td>★ 4.0</td><td>④ 合作成功</td><td></td></tr>
+        <tr><td colspan="8" class="grow">💄 美妆护肤 › 🌿 腰部 5–50 万</td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌿</td><td>120K</td><td>0</td><td>—</td><td>③ 已拿报价</td><td></td></tr>
+        <tr><td><div class="bar"></div></td><td>💄</td><td>🌿</td><td>86K</td><td>0</td><td>—</td><td>① 未有效建联</td><td>ซ้ำ / 重复</td></tr>
+        <tr><td colspan="8" class="grow">🍜 美食 › 🌱 KOC 5 万以下</td></tr>
+        <tr><td><div class="bar"></div></td><td>🍜</td><td>🌱</td><td>32K</td><td>2</td><td>★ 4.8</td><td>④ 合作成功</td><td></td></tr>
+      </table>
+      <p class="ic" style="margin:8px 0 0">三张表连着：<b>项目表</b>（一个品牌项目一行，按季度 → 月份）· <b>达人总表</b>（一个达人一行）· <b>项目名单</b>（一个达人 × 一个项目：提报 / 合作 / 打分）。在名单里加一行，另外两张表自动显示。</p>
+    </div>
+    <div class="wire">
+      <div class="cap">仪表盘 · 给领导看</div>
+      <div class="grp">BD 跟进漏斗</div>
+      <div class="ic">每个 BD 一根柱子，按 ① 未有效建联 / ② 有效建联 / ③ 已拿报价 / ④ 合作成功 分层</div>
+      <div style="display:flex;gap:14px;align-items:flex-end;height:90px;margin:10px 0 4px">
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div style="height:18%;background:var(--build)"></div><div style="height:20%;background:var(--accent)"></div><div style="height:12%;background:var(--explain)"></div><div style="height:50%;background:var(--line)"></div></div>
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:70%"><div style="height:22%;background:var(--build)"></div><div style="height:30%;background:var(--accent)"></div><div style="height:10%;background:var(--explain)"></div><div style="height:38%;background:var(--line)"></div></div>
+        <div style="width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:30%"><div style="height:100%;background:var(--line)"></div></div>
+      </div>
+      <div class="ic">BD A · BD B · BD C</div>
+      <div class="grp" style="margin-top:10px">每人四个数</div>
+      <div class="ic">有效建联数 · 有效建联率 · 合作成功数 · 合作平均评分</div>
+    </div>
+    <div class="wire">
+      <div class="cap">项目名单 · 打分</div>
+      <div class="grp">📝 待评分（合作过、还没打分的）</div>
+      <div class="item"><div class="th">达人 × 项目</div><div class="zh">⏰ 准时 ★★★★☆ &nbsp; 🎬 内容 ★★★★★</div><div class="zh">📈 数据 ★★★☆☆ &nbsp; 🤝 配合 ★★★★☆</div><div class="ic">一句话评价：<span class="bar w60" style="display:inline-block;vertical-align:middle"></span></div></div>
+      <div class="item"><div class="th">达人 × 项目</div><div class="zh">之前合作过：✅ 合作过 2 次</div></div>
+      <div class="item"><div class="th">达人 × 项目</div><div class="zh">之前合作过：⛔ 黑名单</div></div>
+    </div>
+  </div>
+  <p class="proto-notes">跟进阶段按填的信息自动判断，不用手填；提报前自动提醒合作过几次或是不是黑名单。</p>
+
+
+</article>
+</body>
+</html>

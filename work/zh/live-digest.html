@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>直播运营数字分身 · 车杭忆</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
+  <h1>直播运营数字分身</h1>
+  <div class="meta"><span>2026.11 — 至今</span><span class="chip build">做成工具</span><span>给：越南直播运营负责人</span></div>
+  <p>给越南直播运营团队用。痛点：运营每天要写汇报，素材散在好几个直播群、TikTok 后台截图和表格里，要一个个翻、手动算销量、手动查当天改了什么，最花时间的是找和算。做成一个数字分身：替人读群和截图，数字由程序算好，每晚一张日报、每周一份周报，人只核对。</p>
+
+  <h2>怎么实现</h2>
+  <div class="mm">
+    <div class="root"><div class="t">替人读群、算数、出总结</div><div class="ba"><span><b>Before</b>逐个群翻素材、手动算数、写汇报</span><span><b>After</b>21:30 一张卡片，每项一句结论</span></div></div>
+    <div class="branches">
+      <div class="br"><div class="h"><span class="n">01</span>读群<span class="who auto">🤖 AI</span></div><ul><li>用负责人的授权读指定的直播群，机器人不进群、不发言，群成员无感；读文字、图文和图片</li></ul></div>
+      <div class="br"><div class="h"><span class="n">02</span>读大屏截图<span class="who auto">🤖 AI</span></div><ul><li>从 TikTok LIVE 大屏截图里读成交额、售出、观看；货币按截图上显示的认，读不出就标明不猜；同一场重复截图只算一场</li></ul></div>
+      <div class="br"><div class="h"><span class="n">03</span>每日总结<span class="who auto">🤖 AI</span></div><ul><li>每晚 21:30 一张卡片：销量总览，每个品牌一块，按上午、下午、晚上场分开；数字由程序计算，不让模型估；五个固定问题各一句结论，不列时间点和发言人</li></ul></div>
+      <div class="br"><div class="h"><span class="n">04</span>周报<span class="who auto">🤖 AI</span></div><ul><li>每周六按品牌整理一周：场次、成交、件数，一句本周结论</li></ul></div>
+      <div class="br"><div class="h"><span class="n">05</span>核对<span class="who human">👤 人工</span></div><ul><li>只发给负责人本人，他核对后再往上报；内容云端现读现发，不长期保存</li></ul></div>
+    </div>
+  </div>
+
+  <h2>长什么样</h2>
+  <p>一张私聊卡片，没有界面。</p>
+  <div class="proto">
+    <div class="wire">
+      <div class="cap">每日日报 · 21:30 私聊</div>
+      <div class="hd">📊 直播日报 · 11-13</div>
+      <div class="grp">销量总览</div>
+      <div class="item"><div class="th" style="font-size:15px">฿ 128,400</div><div class="zh">成交 · 售出 1,860 件 · 6 场</div></div>
+      <div class="grp" style="border-left:4px solid var(--make);padding-left:8px">品牌 A</div>
+      <div class="item"><div class="zh">上午场 ฿ 21,000 · 售出 310 · 观看 4.2K · ROI 2.1</div><div class="zh">下午场 ฿ 35,000 · 售出 480 · 观看 6.8K · ROI 2.6</div><div class="zh">晚上场 <b>฿ 52,000</b> · 售出 790 · 观看 11K · ROI 3.0</div></div>
+      <div class="grp" style="border-left:4px solid var(--explain);padding-left:8px">品牌 B</div>
+      <div class="item"><div class="bar w80"></div><div class="bar w60"></div></div>
+      <div class="grp">五个固定问题</div>
+      <div class="item"><div class="zh">开播时间：按计划</div><div class="zh">活动调整：晚上场加了买一送一</div><div class="zh">商品链接：换了主推链接</div><div class="zh">投流改动：无</div><div class="zh">需要关注：下午场观看高但转化低</div></div>
+    </div>
+    <div class="wire">
+      <div class="cap">周六周报 · 按品牌</div>
+      <div class="hd">📈 本周 · 品牌 A</div>
+      <div class="item"><div class="zh">场次 18 · 成交 ฿ 610K · 件数 8.9K</div><div class="bar w80"></div><div class="bar w60"></div></div>
+      <div class="hd" style="margin-top:10px">📈 本周 · 品牌 B</div>
+      <div class="item"><div class="bar w80"></div><div class="bar w40"></div></div>
+      <div class="ic" style="margin-top:10px">本周结论一句话</div>
+      <div class="grp" style="margin-top:14px">它读的是什么</div>
+      <div class="item"><div class="zh">群里的文字、图文、图片</div><div class="zh">TikTok LIVE 大屏截图 → 成交额、售出、观看，<b>按截图上的货币</b></div></div>
+    </div>
+  </div>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade Show Intel Assistant · Hangyi Che</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../index.html#projects">← Hangyi Che / Projects</a>
+  <h1>Trade Show Intel Assistant</h1>
+  <div class="meta"><span>2026.10 — present</span><span class="chip build">Build</span><span>For: the e-commerce BD team</span></div>
+  <p>Built for the BD team. The pain: the best places to find clients are trade shows and platform seller conferences, spread across Vietnam, Thailand, Malaysia, Japan and mainland China. Nobody watched them daily, so the team found out too late or by luck. I built an assistant that runs daily: search, verify, write to a table, and send a daily digest by direct message to subscribed colleagues each morning.</p>
+
+  <h2>How it works</h2>
+  <div class="mm">
+    <div class="root"><div class="t">Searches at 7:00, pushes at 9:30, every day</div><div class="ba"><span><b>Before</b>Relied on someone happening to see it; registration often missed</span><span><b>After</b>One table, one daily digest; see a good one, go register</span></div></div>
+    <div class="branches">
+      <div class="br"><div class="h"><span class="n">01</span>Collect<span class="who auto">🤖 AI</span></div><ul><li>Check what's already in the table, then search events in the next 15 months, by priority: e-commerce platform events → major industry shows in Vietnam, Thailand, Malaysia → Japan → mainland China; events with no published date go on a to-confirm list and get rechecked next run</li></ul></div>
+      <div class="br"><div class="h"><span class="n">02</span>Verify<span class="who auto">🤖 AI</span></div><ul><li>Dates and venues are verified on the official site; anything seen only on aggregator sites is marked "pending official confirmation", never made up</li></ul></div>
+      <div class="br"><div class="h"><span class="n">03</span>Write to the table<span class="who auto">🤖 AI</span></div><ul><li>Deduped by event name plus start date, written into a Base: category, location, start and end dates, type, registration link; never overwrites a status set by a person</li></ul></div>
+      <div class="br"><div class="h"><span class="n">04</span>Daily digest<span class="who auto">🤖 AI</span></div><ul><li>At 9:30, a direct message to everyone in the subscriber table: how many new events this run, deadlines within 7 days, date clash alerts; add a row with your name to subscribe</li></ul></div>
+      <div class="br"><div class="h"><span class="n">05</span>Registration<span class="who human">👤 Human</span></div><ul><li>Read the digest, open the registration link, go back to the table and set the status to "Registered" or "Not considering"</li></ul></div>
+    </div>
+  </div>
+
+  <h2>What it looks like</h2>
+  <div class="duo">
+    <figure class="shot"><img src="../../assets/work/expo/daily.jpg" alt="Trade show daily digest card"><figcaption class="placeholder" style="font-style:normal">Daily digest by direct message at 9:30: how many new events, grouped by region and category, with a separate reminder for registrations closing soon</figcaption></figure>
+    <figure class="shot"><img src="../../assets/work/expo/table.jpg" alt="Trade show intel table"><figcaption class="placeholder" style="font-style:normal">Base: grouped by month; category, location, start and end dates, type, registration link</figcaption></figure>
+  </div>
+
+</article>
+</body>
+</html>

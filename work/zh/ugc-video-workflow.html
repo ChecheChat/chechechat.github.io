@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>跨境 UGC 短视频工作流 · 车杭忆</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../zh.html#projects">← 车杭忆 / 项目</a>
+  <h1>跨境 UGC 短视频工作流</h1>
+  <div class="meta"><span>2026.06</span><span class="chip make">做出来</span><span class="chip explain">讲出来</span><span>元极 AI · 公开模板</span></div>
+
+  <div class="vhero">
+    <video src="../../assets/work/ugc/sample.mp4" poster="../../assets/work/ugc/poster.jpg" muted loop playsinline autoplay controls></video>
+    <div class="side">
+      <div class="k">输入</div>
+      <div class="in"><span>产品图 × 2</span><span>人物图 × 1</span><span>产品信息：名称、卖点、包装特征、目标人群</span></div>
+      <p style="margin-top:14px"><b style="color:var(--fg)">输出</b>：一条 8 秒竖版 UGC 短视频，带旁白、字幕、封面标题和标签。左边就是成片。</p>
+    </div>
+  </div>
+
+  <p>给跨境卖家用。痛点：一个产品做一条 UGC 短视频，要写创意、分镜、文案再生成，每次从头来。做成模板后换产品、换人物，流程不变，成片照出。元极 AI 公开模板，配了一条教程视频。</p>
+
+  <h2>怎么实现</h2>
+  <div class="mm">
+    <div class="root"><div class="t">六个 Agent 串成一条线</div><div class="ba"><span><b>Before</b>一句提示词，直接要视频</span><span><b>After</b>先拆流程，每步一个 Agent，上一步的输出是下一步的输入</span></div></div>
+    <div class="branches">
+      <div class="br">
+        <div class="h"><span class="n">00</span>产品分析<span class="who auto">Agent</span></div>
+        <ul>
+          <li>读图和文字，整理品类、包装特征、外观，总结核心卖点</li>
+          <li>三条约束：只能来自上传素材、包装特征写具体、卖点不夸大</li>
+        </ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">01</span>创意策略<span class="who auto">Agent</span></div>
+        <ul><li>判断这个产品适合放进哪种 UGC 场景，定目标受众和情绪</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">02</span>视觉风格<span class="who auto">Agent</span></div>
+        <ul><li>画面质感、色调、人物状态、产品怎么出现，输出结构化描述</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">03</span>分镜脚本<span class="who auto">Agent</span></div>
+        <ul><li>逐秒写：镜头、人物动作、产品何时入画、音效</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">04</span>旁白、字幕、标签<span class="who auto">Agent</span></div>
+        <ul><li>按时间轴写旁白和字幕，给三个封面标题、十个标签</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">05</span>生成视频<span class="who mixed">模型 + 人</span></div>
+        <ul><li>前面所有输出合成提示，生成成片；人看结果，不对就回去改 Agent</li></ul>
+      </div>
+    </div>
+  </div>
+
+
+  <h2>调出来的，不是写出来的</h2>
+  <p>成片出一个问题，就回到对应节点加一条约束，再跑。</p>
+  <div class="probs">
+    <div class="p"><img src="../../assets/work/ugc/p1-toilet.jpg" alt=""><div class="b"><span class="no">问题 01</span><span class="q">场景跑到了厕所里，食品和卫生间放在一起</span><span class="to">→ 改 01 创意策略</span><span class="fx">加一条：食品类不得出现在卫生间等场景，场景必须和「吃」不冲突</span></div></div>
+    <div class="p"><img src="../../assets/work/ugc/p2-package.jpg" alt=""><div class="b"><span class="no">问题 02</span><span class="q">撕包装穿帮，包装撕开的方式和实物不符</span><span class="to">→ 改 00 产品分析 + 03 分镜</span><span class="fx">包装特征写具体到开口位置；开袋动作一气呵成，不拆步骤</span></div></div>
+    <div class="p"><img src="../../assets/work/ugc/p3-phone.jpg" alt=""><div class="b"><span class="no">问题 03</span><span class="q">手机屏幕变形，文字糊成一团</span><span class="to">→ 改 02 视觉风格</span><span class="fx">屏幕只给模糊的信息流和红点，不要求可读文字</span></div></div>
+    <div class="p"><img src="../../assets/work/ugc/p4-handoff.jpg" alt=""><div class="b"><span class="no">问题 04</span><span class="q">结尾把咬过的蛋白棒递给同事，逻辑突兀</span><span class="to">→ 改 03 分镜</span><span class="fx">结尾动作限定为女主自己完成，不涉及第二人</span></div></div>
+  </div>
+
+  <figure class="shot" style="margin-top:28px"><img src="../../assets/work/ugc/canvas.jpg" alt="元极画布：用户输入、六个节点、视频输出"><figcaption class="placeholder" style="font-style:normal">元极画布全貌：左边用户输入，中间四个节点的提示词，右边成片</figcaption></figure>
+
+  <h2>传播</h2>
+  <div class="facts">
+    <div><span class="k" style="display:block">教程视频</span><span class="v" style="display:block">抖音 · 6 分 28 秒</span><p style="margin:6px 0 0;font-size:13px">播放 4,800+ · 收藏 60 · <a class="vid" href="https://www.douyin.com/video/7652987260652064042" target="_blank" rel="noopener">看视频 ↗</a></p></div>
+    <div><span class="k" style="display:block">模板</span><span class="v" style="display:block">元极 AI 公开上线</span><p style="margin:6px 0 0;font-size:13px">传自己的产品图和人物图即可跑通</p></div>
+    <div><span class="k" style="display:block">一句话</span><span class="v" style="display:block">流程拆清楚，才有可复用的工作流</span><p style="margin:6px 0 0;font-size:13px">人负责拆流程和定约束，AI 负责执行每一步</p></div>
+  </div>
+
+  <h2>工具</h2>
+  <p>元极 AI 造境画布 · 多 Agent 节点 · 图生视频</p>
+</article>
+</body>
+</html>

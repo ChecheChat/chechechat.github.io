@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product 3D Studio · Hangyi Che</title>
+<link rel="stylesheet" href="../../site.css?v=33">
+</head>
+<body>
+<article class="detail">
+  <a class="back" href="../../index.html#projects">← Hangyi Che / Projects</a>
+  <h1>Product 3D Studio</h1>
+  <div class="meta"><span>2026.11</span><span class="chip make">Build</span><span>Manycore Aholo Global 3D AI Hackathon · Entry</span></div>
+
+  <figure class="shot"><img src="../../assets/work/product3d/room.jpg" alt="Product page: 3D model, recolor, three-view sheet, turntable video, AR"><figcaption class="placeholder" style="font-style:normal">Product page: rotatable 3D model on the left, one-click recolor and the original input image on the right</figcaption></figure>
+
+  <p>Built for e-commerce merchants. The pain: listing one product means modeling, multi-angle studio shots and a video, which small merchants cannot afford. This tool takes one product photo in and gives back a 3D model, multi-angle images, a turntable video, color variants and an AR preview in one go, ready to list. The 3D comes from Manycore Aholo Lux3D image-to-3D; what I built is the studio merchants can use directly. <a href="https://product3d-studio.vercel.app" target="_blank" rel="noopener">Live site ↗</a> · <a href="https://github.com/ChecheChat/product3d-studio" target="_blank" rel="noopener">GitHub ↗</a></p>
+
+  <h2>How it works</h2>
+  <div class="mm">
+    <div class="root"><div class="t">One product photo, a full set of e-commerce assets</div><div class="ba"><span><b>Before</b>Schedule modeling, book a studio for multi-angle shots, buyers can't see the item before samples are sent</span><span><b>After</b>Upload a photo, 3D in about 5 minutes, the rest of the assets in one click in the browser</span></div></div>
+    <div class="branches">
+      <div class="br">
+        <div class="h"><span class="n">01</span>Upload and generate<span class="who auto">Lux3D image-to-3D</span></div>
+        <ul>
+          <li>Upload 1 to 8 photos; multiple angles of the same product are more accurate; the frontend compresses before upload</li>
+          <li>Two tiers: quick preview, about 1.5 minutes, shape only; high quality, about 5 minutes, patterns and text are clear</li>
+        </ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">02</span>Multi-angle images and turntable video<span class="who auto">In the browser</span></div>
+        <ul>
+          <li>An orthographic camera aims at the model's bounding box, renders six views (front, right, top, back, left, 3/4) and stitches them into a labeled sheet</li>
+          <li>The turntable video is recorded in the browser, one turn in 6 seconds, no server involved</li>
+        </ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">03</span>One-click recolor<span class="who auto">Lux3D material repaint</span></div>
+        <ul><li>Pick a preset or write one line; a color reference image is generated first, then the material is repainted on the same model; a reference image can also be uploaded directly</li></ul>
+      </div>
+      <div class="br">
+        <div class="h"><span class="n">04</span>AR and sharing<span class="who mixed">Export + Human</span></div>
+        <ul>
+          <li>AR preview: every model and color variant is exported to USDZ automatically; view it at real size in your room on a phone, useful for prints, decor and home goods where placement matters; iPhone uses AR Quick Look, Android uses Scene Viewer, desktop shows a QR code</li>
+          <li>Share page in Thai and Chinese, read-only; creators and clients can rotate the model, download the turntable video and the multi-angle images without logging in; look first, then send the real sample</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2>Decisions from testing</h2>
+  <p>Before building, I ran the official sample, a mug and a gaming mouse through several rounds, logging time and results. Several product decisions came from that table.</p>
+  <div class="lessons">
+    <div><div><span class="k">Tested</span><span class="bad">Same mug: from a single photo the wave pattern blurred into random lines; with five multi-angle photos the back pattern landed in the right place</span></div><div><span class="k">So</span><span class="fix">The upload box says "shoot several angles of the same product"; multiple photos encouraged by default</span></div></div>
+    <div><div><span class="k">Tested</span><span class="bad">High quality is four times slower and twenty times more expensive in credits than quick, but glaze shine and patterns are clearly the best</span></div><div><span class="k">So</span><span class="fix">Both tiers kept, high quality is the default; quick is labeled "shape only" for people who just want a rough look</span></div></div>
+    <div><div><span class="k">Tested</span><span class="bad">The gaming mouse generated from five photos came out facing 180° the wrong way</span></div><div><span class="k">So</span><span class="fix">Added a "Set front" button on the product page; the turntable and multi-angle images follow the corrected orientation</span></div></div>
+    <div><div><span class="k">Tested</span><span class="bad">The official output links are only valid for two hours</span></div><div><span class="k">So</span><span class="fix">On job success, download and save to our own storage right away; the share page always opens</span></div></div>
+  </div>
+
+  <h2>What it looks like</h2>
+  <div class="gallery">
+    <div><img src="../../assets/work/product3d/home.jpg" alt="Studio home page" style="width:100%;border-radius:8px;border:1px solid var(--line)"><p style="font-size:12.5px;margin:6px 0 0">Studio: upload a photo, pick a tier, your products below</p></div>
+    <div><img src="../../assets/work/product3d/share.jpg" alt="Share page" style="width:100%;border-radius:8px;border:1px solid var(--line)"><p style="font-size:12.5px;margin:6px 0 0">Share page: Thai and Chinese, send to overseas creators before sending samples</p></div>
+  </div>
+
+  <h2>Tools</h2>
+  <p>Aholo Lux3D API · Next.js · Three.js · Vercel Blob · Written with Claude Code</p>
+</article>
+</body>
+</html>
